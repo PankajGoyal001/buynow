@@ -1,0 +1,18 @@
+[
+    {
+        "href": "/",
+        "name": "Home"
+    },
+    {
+        "href": "/topdeals",
+        "name": "Top Deals"
+    },
+    {
+        "href": "/offers",
+        "name": "Hot Offers"
+    },
+    {
+        "href": "/pages",
+        "name": "Pages"
+    }
+]
