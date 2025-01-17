@@ -5,14 +5,14 @@ const Banner = () => {
   return (
     <>
       <div className="container">
-        <div className="flex justify-between mt-20 mb-[65px]">
-          <div className="grid gap-10">
-            <div className="grid gap-5 max-w-[490px] ">
+        <div className="flex justify-between  mt-20 mb-[65px]">
+          <div className="grid gap-10 font-heebo">
+            <div className="grid gap-5 font-heebo max-w-[490px] ">
               <div className="flex items-center ">
-              <h3 className="font-heebo text-gray-Purple font-medium text-xl leading-8" >Top collections </h3>
+              <h3 className="font-heebo text-[#422659] font-medium text-xl leading-8" >Top collections </h3>
               <img src={Fire} alt="fire" />
               </div>
-
+              <h1 className="">Best place to find and buy products for your need</h1>
             </div>
           </div>
           <div className=""></div>

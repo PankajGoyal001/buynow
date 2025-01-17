@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../../json/menulinks.json";
 import logo from "../../assets/Images/Logo.png";
 import flag from "../../assets/svg/india.svg";
@@ -6,7 +6,13 @@ import flag from "../../assets/svg/india.svg";
 import badge from "../../assets/svg/badge.svg";
 import contact from "../../assets/svg/Contact.svg";
 
+
 function Header() {
+
+  const [rotate, setRotate] = useState(false)
+  console.log(rotate);
+  
+
   return (
     <header className="border-b">
       <div className="w-full bg-black py-3 ">
@@ -42,7 +48,7 @@ function Header() {
               {data?.length &&
                 data &&
                 data?.map((items, index) => (
-                  <li className="list-none " key={Date.now() + index}>
+                  <li className="list-none hover: " key={Date.now() + index}>
                     {items?.name}
                   </li>
                 ))}
@@ -63,10 +69,9 @@ function Header() {
                   id="search"
                   placeholder="Search"
                 />
-                <div className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] rounded-[30px]">
-                  <p className="text-white text-sm leading-6">ALL</p>
-                  <img src="src/assets/svg/down.svg" alt="arrow" />
-                </div>
+                <button onClick={()=>setRotate(!rotate)} className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]">ALL
+                  <img className={`transition-all duration-200 ${rotate && "rotate-180"}`}  src="src/assets/svg/down.svg" alt="arrow" />
+                </button>
               </div>
             </div>
             <div className="flex gap-5 items-center">
