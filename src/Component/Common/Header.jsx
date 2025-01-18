@@ -19,17 +19,17 @@ function Header() {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="flex gap-2 items-center">
-              <img src="src/assets/svg/scooty.svg" alt="scooty" />
-              <p className="text-sm text-gray-Silver font-heebo opacity-90 ">
+              <img className="hidden sm:block" src="src/assets/svg/scooty.svg" alt="scooty" />
+              <p className="text-sm text-gray-graylight font-heebo opacity-90 ">
                 Free delivery on $100.00
               </p>
             </div>
-            <div className="flex text-gray-Silver gap-[10px]  ">
+            <div className="flex text-gray-graylight gap-[10px]  ">
               <p className="opacity-90  font-normal text-sm">Help center</p>
               <span className="h-6 border-r rounded-[5px] opacity-90 border-[#ED5F6014]"></span>
-              <p className="opacity-90  font-normal text-sm">Returns policy</p>
+              <p className="opacity-90 hidden sm:block  font-normal text-sm">Returns policy</p>
               <span className="h-6 border-r rounded-[5px] opacity-90 border-[#ED5F6014]"></span>
-              <div className="flex gap-2">
+              <div className="flex gap-2  sm:block ">
                 <p className="opacity-90  font-normal text-sm">Support</p>
                 <p className=" opacity-90  font-normal text-sm">
                   (+00) 0123456789
@@ -42,13 +42,13 @@ function Header() {
 
       <div className="container">
         <div className="flex justify-between items-center">
-          <div className="flex gap-[30px] ">
+          <div className="flex items-center gap-[30px] ">
             <img src={logo} alt="logo" />
-            <ul className="flex justify-center gap-8 ">
+            <ul className="flex justify-center text-gray-graydark gap-8 ">
               {data?.length &&
                 data &&
                 data?.map((items, index) => (
-                  <li className="list-none hover: " key={Date.now() + index}>
+                  <li className="list-none hover:border-b border-gray-graylight  " key={index}>
                     {items?.name}
                   </li>
                 ))}
@@ -62,7 +62,7 @@ function Header() {
                 src="src/assets/svg/Search.svg"
                 alt="search"
               />
-              <div className="flex">
+              <div className="flex group">
                 <input
                   className="w-36 outline-none"
                   type="text"
@@ -70,7 +70,7 @@ function Header() {
                   placeholder="Search"
                 />
                 <button onClick={()=>setRotate(!rotate)} className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]">ALL
-                  <img className={`transition-all duration-200 ${rotate && "rotate-180"}`}  src="src/assets/svg/down.svg" alt="arrow" />
+                  <img className={`transition-all duration-200 ${rotate && "rotate-180"} opacity-20  group-hover:opacity-100` }  src="src/assets/svg/down.svg" alt="arrow" />
                 </button>
               </div>
             </div>

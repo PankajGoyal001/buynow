@@ -10,12 +10,35 @@
 
 
 @layer base {
-        @font-face {
-            font-family: 'heebo';
-            src: url(./assets/fonts/Heebo-Regular.ttf);
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-        }
-    
+    @font-face {
+        font-family: 'heebo_regular';
+        src: url(./assets/fonts/Heebo-Regular.ttf);
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'heebo_Medium';
+        src: url(./assets/fonts/Heebo-Medium.ttf);
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'inter_regular';
+        src: url(./assets/fonts/Inter_18pt-Regular.ttf);
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'inter_medium';
+        src: url(./assets/fonts/Inter_18pt-Medium.ttf);
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+    }
 }

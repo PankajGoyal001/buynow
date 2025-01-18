@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Footer = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [rotate, setRotate] = useState(true);
 
-export default Footer
+  return (
+    <>
+      <div className="">
+        <button onClick={() => setRotate(!rotate)}>
+          {rotate ? "pankaj" : "babbl"}
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default Footer;
