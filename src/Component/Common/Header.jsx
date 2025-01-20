@@ -6,12 +6,9 @@ import flag from "../../assets/svg/india.svg";
 import badge from "../../assets/svg/badge.svg";
 import contact from "../../assets/svg/Contact.svg";
 
-
 function Header() {
-
-  const [rotate, setRotate] = useState(false)
+  const [rotate, setRotate] = useState(false);
   console.log(rotate);
-  
 
   return (
     <header className="border-b">
@@ -19,7 +16,11 @@ function Header() {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="flex gap-2 items-center">
-              <img className="hidden sm:block" src="src/assets/svg/scooty.svg" alt="scooty" />
+              <img
+                className="hidden sm:block"
+                src="src/assets/svg/scooty.svg"
+                alt="scooty"
+              />
               <p className="text-sm text-gray-graylight font-heebo opacity-90 ">
                 Free delivery on $100.00
               </p>
@@ -27,9 +28,11 @@ function Header() {
             <div className="flex text-gray-graylight gap-[10px]  ">
               <p className="opacity-90  font-normal text-sm">Help center</p>
               <span className="h-6 border-r rounded-[5px] opacity-90 border-[#ED5F6014]"></span>
-              <p className="opacity-90 hidden sm:block  font-normal text-sm">Returns policy</p>
+              <p className="opacity-90 hidden sm:block  font-normal text-sm">
+                Returns policy
+              </p>
               <span className="h-6 border-r rounded-[5px] opacity-90 border-[#ED5F6014]"></span>
-              <div className="flex gap-2  sm:block ">
+              <div className="sm:flex gap-2 hidden">
                 <p className="opacity-90  font-normal text-sm">Support</p>
                 <p className=" opacity-90  font-normal text-sm">
                   (+00) 0123456789
@@ -48,7 +51,10 @@ function Header() {
               {data?.length &&
                 data &&
                 data?.map((items, index) => (
-                  <li className="list-none hover:border-b border-gray-graylight  " key={index}>
+                  <li
+                    className="list-none hover:border-b border-gray-graylight  "
+                    key={index}
+                  >
                     {items?.name}
                   </li>
                 ))}
@@ -69,8 +75,18 @@ function Header() {
                   id="search"
                   placeholder="Search"
                 />
-                <button onClick={()=>setRotate(!rotate)} className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]">ALL
-                  <img className={`transition-all duration-200 ${rotate && "rotate-180"} opacity-20  group-hover:opacity-100` }  src="src/assets/svg/down.svg" alt="arrow" />
+                <button
+                  onClick={() => setRotate(!rotate)}
+                  className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]"
+                >
+                  ALL
+                  <img
+                    className={`transition-all duration-200 ${
+                      rotate && "rotate-180"
+                    } opacity-20  group-hover:opacity-100`}
+                    src="src/assets/svg/down.svg"
+                    alt="arrow"
+                  />
                 </button>
               </div>
             </div>

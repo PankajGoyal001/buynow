@@ -1,26 +1,30 @@
 [
     {
-        "images":"",
+        "images":"laptop.svg",
         "name":"Laptop"
     },
     {
-        "images":"",
+        "images":"mobile.svg",
         "name":"Mobile"
     },
     {
-        "images":"",
+        "images":"watch.svg",
         "name":"Watches"
     },
     {
-        "images":"",
+        "images":"camera.svg",
         "name":"Camera"
     },
     {
-        "images":"",
+        "images":"speaker.svg",
         "name":"Speakers"
     },
     {
-        "images":"",
+        "images":"headphone.svg",
         "name":"Headphone"
+    },
+    {
+        "images":"Dslr.svg",
+        "name":"Dslr"
     }
 ]

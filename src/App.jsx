@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Component/Common/Header";
 import Footer from "./Component/Common/Footer";
 import Home from "./Pages/Home";
+import MySwiper from "./Component/MySwiper";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+
+      <MySwiper />
     </>
   );
 }

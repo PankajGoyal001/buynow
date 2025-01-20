@@ -16,6 +16,9 @@ export default {
         yellow: {
           yellow:"#FFB400"
         },
+        slate:{
+          slatedark: "#212B36"
+        }
       },
     },
     fontFamily: {
