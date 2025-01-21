@@ -5,6 +5,7 @@ import flag from "../../assets/svg/india.svg";
 // import array from "../../assets/svg/array_down";
 import badge from "../../assets/svg/badge.svg";
 import contact from "../../assets/svg/Contact.svg";
+import navbar from "../../assets/svg/IconButton.svg";
 
 function Header() {
   const [rotate, setRotate] = useState(false);
@@ -47,7 +48,7 @@ function Header() {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-[30px] ">
             <img src={logo} alt="logo" />
-            <ul className="flex justify-center text-gray-graydark gap-8 ">
+            <ul className="md:flex justify-center hidden  text-gray-graydark gap-8 ">
               {data?.length &&
                 data &&
                 data?.map((items, index) => (
@@ -62,48 +63,28 @@ function Header() {
           </div>
 
           <div className="flex items-center gap-[30px] py-[15px] ">
-            <div className="border items-center rounded-[30px] flex gap-2 ">
-              <img
-                className="pl-3"
-                src="src/assets/svg/Search.svg"
-                alt="search"
-              />
-              <div className="flex group">
-                <input
-                  className="w-36 outline-none"
-                  type="text"
-                  id="search"
-                  placeholder="Search"
-                />
-                <button
-                  onClick={() => setRotate(!rotate)}
-                  className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]"
-                >
-                  ALL
-                  <img
-                    className={`transition-all duration-200 ${
-                      rotate && "rotate-180"
-                    } opacity-20  group-hover:opacity-100`}
-                    src="src/assets/svg/down.svg"
-                    alt="arrow"
-                  />
+            <div className="border items-center  rounded-[30px] flex gap-2 ">
+              <img className="pl-3" src="src/assets/svg/Search.svg" alt="search"  />
+              <div className="sm:flex hidden group">
+                <input  className="w-36 outline-none"  type="text"  id="search"  placeholder="Search" />
+                <button  onClick={() => setRotate(!rotate)}  className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]" >  ALL
+                   <img  className={`transition-all duration-200 ${rotate && "rotate-180"  } opacity-20  group-hover:opacity-100`}  src="src/assets/svg/down.svg"   alt="arrow"  />
                 </button>
               </div>
             </div>
             <div className="flex gap-5 items-center">
               <div className="flex">
-                <img src={flag} alt="india" />
+                <img className="hidden lg:block" src={flag} alt="india" />
                 {/* <img src={array} alt="down-array" /> */}
               </div>
-              <span className="w-[1px] h-5 border-r rounded-[6px] opacity-90"></span>
+              <span className="w-[1px] h-5 border-r hidden lg:block rounded-[6px] opacity-90"></span>
               <div className="flex">
                 <img src="src/assets/svg/shop.svg" alt="shop" />
                 <img src={badge} alt="badge" />
               </div>
-              <span className="w-[1px] h-5 border-r rounded-[6px] opacity-90"></span>
-              <div className="border rounded-[30px]">
-                <img className="p-[10px]" src={contact} alt="Contact" />
-              </div>
+              <span className="w-[1px] h-5 border-r lg:block hidden rounded-[6px] opacity-90"></span>
+                <img className=" border rounded-[30px] p-[10px] hidden sm:block " src={contact} alt="Contact" />
+                <img className=" sm:hidden"  src={navbar} alt="navbar" />
             </div>
           </div>
         </div>

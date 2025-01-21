@@ -1,0 +1,36 @@
+[
+    {
+        "head":"Price: $600.00 (Apple watch 7)",
+        "image":"handwatch.svg",
+        "color":"ColorDots.svg",
+        "shop":"cart.svg",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "head":"Price: $120.00 (Wireless Earbuds with Bluetooth)",
+        "image":"earbuds.svg",
+        "color":"ColorDots.svg",
+        "shop":"cart.svg",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "head":"Price: $600.00 (Galaxy S10 FE 4G)",
+        "image":"galaxy.svg",
+        "color":"ColorDots.svg",
+        "shop":"cart.svg",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "head":"Price: $600.00 (Apple Earbuds with Bluetooth)",
+        "image":"AppleEarbuds.svg",
+        "color":"ColorDots.svg",
+        "shop":"cart.svg",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    }
+    
+   
+]

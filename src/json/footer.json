@@ -1,0 +1,24 @@
+[
+    {
+        "head":"Customer support",
+        "text":"Contact us",
+        "text1":"Help center",
+        "text2":"Exchanges",
+        "text3":"Credit cards",
+        "text4":"Debit cards"
+    },
+    {
+        "head":"Contact with us",
+        "text":"Facebook",
+        "text1":"Instagram",
+        "text2":"Twitter",
+        "text3":"Linkedin"
+    },
+    {
+        "head":"About",
+        "text":"Careers",
+        "text1":"About us",
+        "text2":"Blogs",
+        "text3":"News"
+    }
+]

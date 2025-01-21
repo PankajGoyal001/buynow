@@ -1,12 +1,17 @@
 import React from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import Product from "../../json/catagory.json";
+import Prev from "../../assets/svg/pagination_left.svg";
+import Next from "../../assets/svg/pagination_right.svg";
 
 const product_catagory = () => {
+  const swiperRef = useRef();
+
   return (
     <>
       <div className="container">
@@ -26,6 +31,9 @@ const product_catagory = () => {
           // }}
           spaceBetween={20}
           slidesPerView={6}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
@@ -33,8 +41,8 @@ const product_catagory = () => {
             Product &&
             Product?.map((items, index) => (
               <SwiperSlide>
+                  {/* <button onClick={() => swiperRef.current?.slidePrev()}> <img src={Prev} alt="" /> </button> */}
                 <div className=" flex flex-col gap-5 p-5   bg-[#4226590A] border-[#42265914] rounded-[20px]  ">
-                  
                   <img
                     key={index}
                     className="p-5 rounded-full bg-white "
@@ -45,6 +53,7 @@ const product_catagory = () => {
                     {items.name}
                   </p>
                 </div>
+                {/* <button onClick={() => swiperRef.current?.slideNext()}> <img src={Next} alt="" /></button> */}
               </SwiperSlide>
             ))}
         </Swiper>
