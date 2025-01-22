@@ -1,0 +1,42 @@
+[
+    {
+        "Image":"Gamingremote.png",
+        "title":"Gaming remote",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 650.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"VRplus.png",
+        "title":"Play VR Plus Virtual ..",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 500.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Redgear.png",
+        "title":"Redgear Pro Wireless",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 200.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Ninja.png",
+        "title":"Ninja 100SX",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 120.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"WirelessRemote.png",
+        "title":"Gaming remote",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 700.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    }
+]

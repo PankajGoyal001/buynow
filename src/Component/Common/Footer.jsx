@@ -14,18 +14,18 @@ const Footer = () => {
       <div className="flex justify-between max-w-[1152px] w-full relative m-auto bg-white mt-20 mb-[-150px] z-1 rounded-[20px] px-[50px]  py-10 border">
         <div className="grid gap-5">
           <img className="max-w-16" src={Letter} alt="newletter" />
-          <p className="text-slate-slatedark text-[34px] tracking-[0.25px] font-heebo_Medium ">
-            {" "}
-            Subscribe to our newsletter{" "}
+          <p className="font-heebo_Medium text-[34px] ">
+       
+            Subscribe to our newsletter
           </p>
           <p className="text-base font-inter_regular text-gray-graydark">
-            {" "}
-            Get 10% discount{" "}
+      
+            Get 10% discount
           </p>
         </div>
-        <div className="mt-[154px] max-w-[306px] px-5 border rounded-[30px]  flex gap-2">
+        <div className="mt-[154px] max-w-[346px] w-full px-5 border rounded-[30px]  flex gap-2">
           <input
-            className="py-[15px] outline-none text-gray-graydark items-end "
+            className="py-[15px] outline-none w-[274px] text-gray-graydark items-end "
             type="email"
             placeholder="Enter your email..."
           />

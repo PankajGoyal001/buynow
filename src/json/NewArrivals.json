@@ -1,31 +1,15 @@
 [
     {
-        "head":"Price: $600.00 (Apple watch 7)",
-        "image":"handwatch.png",
+        "head":"Price: $190.00 (Viper 16MP 4K HD camera)",
+        "image":"Camera.png",
         "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
         "array":"Arrowlineright.svg"
     },
     {
-        "head":"Price: $120.00 (Wireless Earbuds with Bluetooth)",
-        "image":"earbuds.png",
-        "color":"ColorDots.svg",
-        "shop":"cart.svg",
-        "buy":"BUY",
-        "array":"Arrowlineright.svg"
-    },
-    {
-        "head":"Price: $600.00 (Galaxy S10 FE 4G)",
-        "image":"galaxy.png",
-        "color":"ColorDots.svg",
-        "shop":"cart.svg",
-        "buy":"BUY",
-        "array":"Arrowlineright.svg"
-    },
-    {
-        "head":"Price: $600.00 (Apple Earbuds with Bluetooth)",
-        "image":"AppleEarbuds.png",
+        "head":"Price: $250.00 (Noise Cancellation Headphones)",
+        "image":"Headphone.png",
         "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
@@ -34,6 +18,22 @@
     {
         "head":"Price: $200.00 (ASUS VivoBook 15)",
         "image":"laptop.png",
+        "color":"ColorDots.svg",
+        "shop":"cart.svg",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "head":"Price: $300.00 (Noise Cancellation Headphones)",
+        "image":"WirelessHeadphone.png",
+        "color":"ColorDots.svg",
+        "shop":"cart.svg",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "head":"Price: $600.00 (Galaxy S10 FE 4G)",
+        "image":"galaxy.png",
         "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
