@@ -9,12 +9,12 @@ import ExclusiveData  from "../json/Exclusive.json";
 const Home = () => {
   return (
     <>
-        {/* <Banner/>
-         <Catagory/> 
-        <NewArrivals data={ExclusiveData} title={"Top exclusive products"}/>
-        <Gaming/>
-        <CtaProduct/>
-        <NewArrivals data={NewArrivalsData} title={"New arrivals products "}/> */}
+        <Banner/>
+         {/* <Catagory/>  */}
+        {/* <NewArrivals data={ExclusiveData} title={"Top exclusive products"}/> */}
+        {/* <Gaming/> */}
+        {/* <CtaProduct/> */}
+        {/* <NewArrivals data={NewArrivalsData} title={"New arrivals products "}/> */}
     </>
   );
 };

@@ -17,13 +17,7 @@ const Banner = () => {
                 </h3>
                 <img src={Fire} alt="fire" />
               </div>
-              <h1 className="text-[60px]  tracking-tighter leading-[72px] ">
-                Best Place To Find And{" "}
-                <span className="text-6xl leading-[72px] text-[#67517A]">
-                  Buy Products{" "}
-                </span>{" "}
-                For Your Need
-              </h1>
+              <h1 className="text-[60px] tracking-tighter leading-[72px] ">Best Place To Find And<span className="text-6xl leading-[72px] text-[#67517A]"> Buy Products</span>For Your Need</h1>
             </div>
             <div className="pt-10 tracking-[0.15px] grid gap-10 border-t-2 ">
               <p className="text-gray-graystrong font-inter_regular text-base">
@@ -60,7 +54,11 @@ const Banner = () => {
             </div>
           </div>
           <div className="">
-            <img className="max-w-[473px] w-full" src={hero_img} alt="product-img" />
+            <img
+              className="max-w-[473px] w-full"
+              src={hero_img}
+              alt="product-img"
+            />
           </div>
         </div>
       </div>

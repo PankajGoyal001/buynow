@@ -38,7 +38,7 @@ function Header() {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-[30px] ">
             <img src={logo} alt="logo" />
-            <ul className="md:flex justify-center hidden  text-gray-graydark gap-8 ">
+            <ul className="md:flex  hidden  text-gray-graydark max-w-[380px] w-full  lg:gap-8 ">
               {data?.length &&
                 data &&
                 data?.map((items, index) => (
@@ -52,9 +52,9 @@ function Header() {
             </ul>
           </div>
 
-          <div className="flex items-center gap-[30px] py-[15px] ">
+          <div className="flex items-center  sm:gap-[30px] sm:py-[15px]  py-[10px]">
             <div className="sm:border  items-center  rounded-[30px] flex gap-2 ">
-              <img className="pl-3" src="src/assets/svg/Search.svg" alt="search"  />
+              <img className="sm:pl-3" src="src/assets/svg/Search.svg" alt="search"  />
               <div className="sm:flex hidden group">
                 <input  className="w-36 outline-none"  type="text"  id="search"  placeholder="Search" />
                 <button  onClick={() => setRotate(!rotate)}  className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]" >  ALL
@@ -62,8 +62,8 @@ function Header() {
                 </button>
               </div>
             </div>
-            <div className="flex gap-5 items-center">
-              <div className="flex">
+            <div className=" gap-[10px]  flex sm:gap-5 items-center">
+              <div className=" sm:flex">
                 <img className="hidden lg:block" src={flag} alt="india" />
                 {/* <img src={array} alt="down-array" /> */}
               </div>
