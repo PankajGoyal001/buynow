@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import GameData from "../../json/Gaming.json";
 import Back from "../../assets/svg/ArrowBackFilled.svg";
 import Next from "../../assets/svg/ArrowBackFilled.svg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css";

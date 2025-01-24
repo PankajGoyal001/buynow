@@ -19,16 +19,24 @@ const product_catagory = () => {
           pagination={false}
           loop={true}
           navigation={false}
-          // breakpoints={{
-          //   576: {
-          //     width: 576,
-          //     slidesPerView: 2,
-          //   },
-          //   768: {
-          //     width: 768,
-          //     slidesPerView: 4,
-          //   },
-          // }}
+          breakpoints={{
+            0: {
+              width: 425,
+              slidesPerView: 3.8,
+            },
+            640: {
+              width: 640,
+              slidesPerView: 3.6,
+            },
+            640: {
+              width: 768,
+              slidesPerView: 4.3,
+            },
+            768: {
+              width: 1024,
+              slidesPerView: 5.4,
+            },
+          }}
           spaceBetween={20}
           slidesPerView={6}
           onBeforeInit={(swiper) => {
@@ -42,16 +50,9 @@ const product_catagory = () => {
             Product?.map((items, index) => (
               <SwiperSlide>
                   {/* <button onClick={() => swiperRef.current?.slidePrev()}> <img src={Prev} alt="" /> </button> */}
-                <div className=" flex flex-col gap-5 p-5   bg-[#4226590A] border-[#42265914] rounded-[20px]  ">
-                  <img
-                    key={index}
-                    className="p-5 rounded-full bg-white "
-                    src={`/src/assets/svg/${items.images}`}
-                    alt="SwiperSlideImages"
-                  />
-                  <p className="text-center font-inter_regular text-base text-gray-graystrong">
-                    {items.name}
-                  </p>
+                <div className=" flex flex-col gap-[14px] items-center sm:gap-5 p-[10px] sm:p-5 bg-[#4226590A] border-[#42265914] rounded-[20px]  ">
+                  <img key={index} className="sm:p-5 p-[15px] rounded-full w-[55px] sm:w-full bg-white " src={`/src/assets/svg/${items.images}`} alt="SwiperSlideImages" />
+                  <p className="text-center font-inter_regular text-sm md:text-base text-gray-graystrong">{items.name}</p>
                 </div>
                 {/* <button onClick={() => swiperRef.current?.slideNext()}> <img src={Next} alt="" /></button> */}
               </SwiperSlide>

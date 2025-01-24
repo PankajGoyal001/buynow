@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <>
         <Banner/>
-         {/* <Catagory/>  */}
-        {/* <NewArrivals data={ExclusiveData} title={"Top exclusive products"}/> */}
+         <Catagory/> 
+        <NewArrivals data={ExclusiveData} title={"Top exclusive products"}/>
         {/* <Gaming/> */}
         {/* <CtaProduct/> */}
-        {/* <NewArrivals data={NewArrivalsData} title={"New arrivals products "}/> */}
+        <NewArrivals data={NewArrivalsData} title={"New arrivals products "}/>
     </>
   );
 };

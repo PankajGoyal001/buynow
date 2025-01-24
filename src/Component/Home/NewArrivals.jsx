@@ -17,7 +17,7 @@ const NewArrivals = ({data,title}) => {
           <h1 className="text-[34px] leading-[42px] font-heebo_Medium text-gray-graystrong tracking-wide">
          {title}
           </h1>
-          <div className="flex max-w-[95px] group: hover:cursor-pointer items-center gap-[10px] h-[22px] w-full ">
+          <div className="md:flex max-w-[95px] group: hover:cursor-pointer hidden items-center gap-[10px] h-[22px] w-full ">
             <img className="hover:scale-90 ease-in-out duration-200"  onClick={() => swiperRef.current?.slidePrev()} src={Back} alt="" />
             <span className=" w-[31px] h-[1px]  bg-[#ED5F6014] "></span>
             <img className="hover:scale-90 ease-in-out duration-200 rotate-180" onClick={() => swiperRef.current?.slideNext()}src={Next} alt="" />
@@ -29,6 +29,24 @@ const NewArrivals = ({data,title}) => {
             pagination={false}
             loop={true}
             navigation={false}
+            // breakpoints={{
+            //   0: {
+            //     width: 425,
+            //     slidesPerView: 3.8,
+            //   },
+            //   640: {
+            //     width: 640,
+            //     slidesPerView: 3.6,
+            //   },
+            //   640: {
+            //     width: 768,
+            //     slidesPerView: 4.3,
+            //   },
+            //   768: {
+            //     width: 1024,
+            //     slidesPerView: 4,
+            //   },
+            // }}
             spaceBetween={24}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
