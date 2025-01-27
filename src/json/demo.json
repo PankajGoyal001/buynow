@@ -1,0 +1,50 @@
+{
+    "watches" : [
+        {
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        }
+    ] ,
+    "mobile" : [
+        {
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        },{
+            "title":"Men's Watches",
+            "image": ["" ,"", "", ""]
+        }
+    ]
+}

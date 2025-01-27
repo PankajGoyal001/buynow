@@ -49,10 +49,19 @@ const product_catagory = () => {
             Product &&
             Product?.map((items, index) => (
               <SwiperSlide>
-                  {/* <button onClick={() => swiperRef.current?.slidePrev()}> <img src={Prev} alt="" /> </button> */}
+                {/* <button onClick={() => swiperRef.current?.slidePrev()}> <img src={Prev} alt="" /> </button> */}
                 <div className=" flex flex-col gap-[14px] items-center sm:gap-5 p-[10px] sm:p-5 bg-[#4226590A] border-[#42265914] rounded-[20px]  ">
-                  <img key={index} className="sm:p-5 p-[15px] rounded-full w-[55px] sm:w-full bg-white " src={`/src/assets/svg/${items.images}`} alt="SwiperSlideImages" />
-                  <p className="text-center font-inter_regular text-sm md:text-base text-gray-graystrong">{items.name}</p>
+                  <div className="sm:p-5 p-[15px] rounded-full w-[55px] sm:w-full bg-white relative z-20 ">
+                    <img
+                      key={index}
+                      className=""
+                      src={`/src/assets/svg/${items.images}`}
+                      alt="SwiperSlideImages"
+                    />
+                  </div>
+                  <p className="text-center font-inter_regular text-sm md:text-base text-gray-graystrong">
+                    {items.name}
+                  </p>
                 </div>
                 {/* <button onClick={() => swiperRef.current?.slideNext()}> <img src={Next} alt="" /></button> */}
               </SwiperSlide>

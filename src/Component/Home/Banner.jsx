@@ -29,7 +29,7 @@ const Banner = () => {
                 </span>
               </p>
               <div className="flex gap-[25px] md:gap-[30px] group items-center">
-                <button className="flex gap-2 group-hover:cursor-pointer items-center bg-purple-Purple_dark rounded-[30px] py-2 px-[22px] ">
+                <button className="flex gap-2 group-hover:cursor-pointer hover:scale-90 ease-in-out duration-[0.7s] items-center bg-purple-Purple_dark rounded-[30px] py-2 px-[22px] ">
                   <img src={cart} alt="cart-icon" />
                   <p className="text-white text-[15px] leading-[26px] tracking-[0.46px] font-inter_Medium"> Shop Now </p>
                 </button>
@@ -52,7 +52,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="pt-20 md:pt-0 ">
-            <img  className="  w-[222px]  md:max-w-[473px] md:w-full"  src={hero_img}  alt="product-img" />
+            <img  className=" w-[222px] md:max-w-[473px] md:w-full"  src={hero_img}  alt="product-img" />
           </div>
         </div>
       </div>

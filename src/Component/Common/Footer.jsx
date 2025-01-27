@@ -15,11 +15,9 @@ const Footer = () => {
         <div className="grid gap-5">
           <img className="max-w-16" src={Letter} alt="newletter" />
           <p className="font-heebo_Medium text-[34px] ">
-       
             Subscribe to our newsletter
           </p>
           <p className="text-base font-inter_regular text-gray-graydark">
-      
             Get 10% discount
           </p>
         </div>
@@ -93,18 +91,15 @@ const Footer = () => {
               <div className="flex justify-between tracking-[0.15px]">
                 {footerdata.map((items, index) => (
                   <div className="flex flex-col gap-10">
-                    <p
-                      className="text-white font-heebo_Medium text-xl leading-8 "
-                      key={index}
-                    >
+                    <p className="text-white font-heebo_Medium text-xl leading-8 ">
                       {items.head}{" "}
                     </p>
                     <ul className="flex text-gray-graylight text-base font-inter_regular  flex-col gap-5">
-                      <li key={index}>{items.text}</li>
-                      <li key={index}>{items.text1}</li>
-                      <li key={index}>{items.text2}</li>
-                      <li key={index}>{items.text3}</li>
-                      <li key={index}>{items.text4}</li>
+                      <li>{items.text}</li>
+                      <li>{items.text1}</li>
+                      <li>{items.text2}</li>
+                      <li>{items.text3}</li>
+                      <li>{items.text4}</li>
                     </ul>
                   </div>
                 ))}

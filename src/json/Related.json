@@ -1,0 +1,47 @@
+[
+    {
+        "Image":"waterproofWatch.png",
+        "Name":"Waterproof watch",
+        "Price":"$ 108.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"DigitalDrawing.png",
+        "Name":"Huion Inspiroy Digital Drawi..",
+        "Price":"$ 210.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"Iphone11.png",
+        "Name":"I Phone 11 pro max",
+        "Price":"$ 650.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"SamsungTab.png",
+        "Name":"Samsung Galaxy Tab A8",
+        "Price":"$ 320.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"BoatEarbuds.png",
+        "Name":"boAt Airdopes 2v1.0 Tr..",
+        "Price":"$ 300.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    }
+]

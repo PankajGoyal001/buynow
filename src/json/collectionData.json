@@ -1,0 +1,29 @@
+[
+    {
+        "Image1":"mensWatch1.png",
+        "Image2":"menWatch2.png",
+        "Image3":"menWatch3.png",
+        "Image4":"menWatch4.png",
+        "Name":"Men's Watches",
+        "View":"VIEW ALL",
+        "Array":"Arrowlineright.svg"
+    },
+    {
+        "Image1":"womanWatch1.png",
+        "Image2":"womanWatch2.png",
+        "Image3":"womanWatch3.png",
+        "Image4":"womanWatch4.png",
+        "Name":"Woman’s Watches",
+        "View":"VIEW ALL",
+        "Array":"Arrowlineright.svg"
+    },
+    {
+        "Image1":"smartWatch1.png",
+        "Image2":"smartWatch2.png",
+        "Image3":"smartWatch3.png",
+        "Image4":"smartWatch4.png",
+        "Name":"Smart Watches",
+        "View":"VIEW ALL",
+        "Array":"Arrowlineright.svg"
+    }
+]

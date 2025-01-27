@@ -17,7 +17,7 @@ const CtaProduct = () => {
                 
             </div>
             </div>
-            <img className='p-5' src={Macbook} alt="macbook" />
+            <img className='p-5 hover:scale-95 duration-[1s]' src={Macbook} alt="macbook" />
         </div>
     </div>
     </>
