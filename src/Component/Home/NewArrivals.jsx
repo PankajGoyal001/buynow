@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import ExclusiveData from "../../json/NewArrivals.json";
 import Back from "../../assets/svg/ArrowBackFilled.svg";
 import Next from "../../assets/svg/ArrowBackFilled.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,10 +10,10 @@ import ProjectCards from "../cards/ProjectCards";
 const NewArrivals = ({data,title}) => {
   const swiperRef = useRef();
   return (
-    <div className="container mt-20">
+    <div className="container md:py-10 py-[25px] ">
       <div className="flex flex-col gap-10">
         <div className="flex items-end justify-between">
-          <h1 className="text-[34px] leading-[42px] font-heebo_Medium text-gray-graystrong tracking-wide">
+          <h1 className="sm:text-[34px] text-2xl leading-[42px] font-heebo_Medium text-gray-graystrong tracking-wide">
          {title}
           </h1>
           <div className="md:flex max-w-[95px] group: hover:cursor-pointer hidden items-center gap-[10px] h-[22px] w-full ">
@@ -29,24 +28,24 @@ const NewArrivals = ({data,title}) => {
             pagination={false}
             loop={true}
             navigation={false}
-            // breakpoints={{
-            //   0: {
-            //     width: 425,
-            //     slidesPerView: 3.8,
-            //   },
-            //   640: {
-            //     width: 640,
-            //     slidesPerView: 3.6,
-            //   },
-            //   640: {
-            //     width: 768,
-            //     slidesPerView: 4.3,
-            //   },
-            //   768: {
-            //     width: 1024,
-            //     slidesPerView: 4,
-            //   },
-            // }}
+            breakpoints={{
+              0: {
+                width: 425,
+                slidesPerView: 1.9,
+              },
+              425: {
+                width: 640,
+                slidesPerView: 2.5,
+              },
+              640: {
+                width: 768,
+                slidesPerView: 3.5,
+              },
+              768: {
+                width: 1024,
+                slidesPerView: 3.58,
+              },
+            }}
             spaceBetween={24}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
@@ -55,7 +54,7 @@ const NewArrivals = ({data,title}) => {
             className="mySwiper"
           >
             {data.map((items, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <ProjectCards
                   head={items.head}
                   image={items.image}

@@ -1,0 +1,26 @@
+[
+    {
+        "Images":"BrandWatch1.png",
+        "Name":"Essential white edition",
+        "Price":"Price: $350.00 ",
+        "Discount":"Save 10%",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Images":"BrandWatch2.png",
+        "Name":"Verve NEO smartwatch",
+        "Price":"Price: $210.00 ",
+        "Discount":"Save 20%",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Images":"BrandWatch3.png",
+        "Name":"Lite smartwatch with ..",
+        "Price":"Price: $360.00 ",
+        "Discount":"Save 15%",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    }
+]

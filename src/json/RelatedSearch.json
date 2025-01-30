@@ -1,0 +1,42 @@
+[
+    {
+        "Image":"BTwatch1.png",
+        "title":"Bluetooth watchs",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 120.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"BTwatch2.png",
+        "title":"Play VR Plus Bluetooth watchs",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 80.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"BTwatch3.png",
+        "title":"Redgear Bluetooth watchs",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 205.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"BTwatch4.png",
+        "title":"Bluetooth watchs",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 150.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    },
+    {
+        "Image":"BrandWatch1.png",
+        "title":"Bluetooth watchs",
+        "Rating":"Rating_Star.svg",
+        "Price": "$ 130.00",
+        "buy":"BUY",
+        "array":"Arrowlineright.svg"
+    }
+]

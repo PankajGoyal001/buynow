@@ -14,8 +14,9 @@ const product_catagory = () => {
 
   return (
     <>
-      <div className="container">
-        <Swiper
+      <div className="container sm:py-10 py-[25px]  relative">
+        <button className="absolute top-[45%] z-50 left-[-1px]" onClick={() => swiperRef.current?.slidePrev()}> <img className="max-w-[32px] w-full sm:max-w-[40px] sm:w-full" src={Prev} alt="" /> </button>
+        <Swiper 
           pagination={false}
           loop={true}
           navigation={false}
@@ -48,10 +49,9 @@ const product_catagory = () => {
           {Product?.length &&
             Product &&
             Product?.map((items, index) => (
-              <SwiperSlide>
-                {/* <button onClick={() => swiperRef.current?.slidePrev()}> <img src={Prev} alt="" /> </button> */}
+              <SwiperSlide key={index}>
                 <div className=" flex flex-col gap-[14px] items-center sm:gap-5 p-[10px] sm:p-5 bg-[#4226590A] border-[#42265914] rounded-[20px]  ">
-                  <div className="sm:p-5 p-[15px] rounded-full w-[55px] sm:w-full bg-white relative z-20 ">
+                  <div className="sm:p-5 p-[15px] rounded-full sm:w-full bg-white relative z-20 ">
                     <img
                       key={index}
                       className=""
@@ -63,10 +63,10 @@ const product_catagory = () => {
                     {items.name}
                   </p>
                 </div>
-                {/* <button onClick={() => swiperRef.current?.slideNext()}> <img src={Next} alt="" /></button> */}
               </SwiperSlide>
             ))}
         </Swiper>
+            <button className="absolute top-[45%] z-50 right-[10px]" onClick={() => swiperRef.current?.slideNext()}> <img className="max-w-[32px] w-full sm:max-w-[40px] sm:w-full" src={Next} alt="" /></button>
       </div>
     </>
   );

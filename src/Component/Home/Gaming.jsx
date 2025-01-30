@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import GameData from "../../json/Gaming.json";
 import Back from "../../assets/svg/ArrowBackFilled.svg";
 import Next from "../../assets/svg/ArrowBackFilled.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,22 +7,24 @@ import "swiper/css";
 import "swiper/css/pagination";
 import GameProjuct from "../cards/GameProjuct";
 
-const Gaming = () => {
+
+const Gaming = ({Heading , data,info,step}) => {
   const swiperRef = useRef();
   return (
-    <div className="container mt-20">
+    <div className="container py-10">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-5">
-          <h1 className="text-[34px] leading-[42px] font-heebo_Medium text-gray-graystrong tracking-wide">
-            {" "}
-            Gaming & toy products
+          
+          {
+            step === "solid" ? (<>
+              <h1 className="sm:text-[34px] sm:leading-[42px] text-2xl font-heebo_Medium text-gray-graystrong tracking-wide">
+            {Heading}
           </h1>
           <div className="flex items-end justify-between">
-            <p className="text-base text-gray-graydark font-inter_regular tracking-[0.15px]">
-              {" "}
-              Best selling in games & toy up to 30% off{" "}
+            <p className="sm:text-base text-gray-graydark font-inter_regular text-sm tracking-[0.15px]">
+              {info}
             </p>
-            <div className="flex max-w-[95px] group: hover:cursor-pointer items-center gap-[10px] h-[22px] w-full ">
+            <div className="sm:flex max-w-[95px] hidden group: hover:cursor-pointer items-center gap-[10px] h-[22px] w-full ">
               <img
                 className="hover:scale-90 ease-in-out duration-200"
                 onClick={() => swiperRef.current?.slidePrev()}
@@ -39,12 +40,58 @@ const Gaming = () => {
               />
             </div>
           </div>
+           </> ): (
+            <>
+            <div className="flex justify-between items-end">
+            <h1 className="sm:text-[34px] sm:leading-[42px] text-2xl font-heebo_Medium text-gray-graystrong tracking-wide">
+            {Heading}
+          </h1>
+          <div className="flex items-end justify-between">
+           
+            <div className="sm:flex max-w-[95px] hidden group: hover:cursor-pointer items-center gap-[10px] h-[22px] w-full ">
+              <img
+                className="hover:scale-90 ease-in-out duration-200"
+                onClick={() => swiperRef.current?.slidePrev()}
+                src={Back}
+                alt="Prev"
+              />
+              <span className=" w-[31px] h-[1px]  bg-[#ED5F6014] "></span>
+              <img
+                className="hover:scale-90 ease-in-out duration-200 rotate-180"
+                onClick={() => swiperRef.current?.slideNext()}
+                src={Next}
+                alt="Next"
+              />
+            </div>
+          </div>
+          </div>
+            </>
+           )
+          }
         </div>
-        <div className="py-[30px] my-[30px]">
+        <div >
           <Swiper
             pagination={false}
             loop={true}
             navigation={false}
+            breakpoints={{
+              0: {
+                width: 425,
+                slidesPerView: 1.9,
+              },
+              425: {
+                width: 640,
+                slidesPerView: 2.5,
+              },
+              640: {
+                width: 768,
+                slidesPerView: 3.5,
+              },
+              768: {
+                width: 1024,
+                slidesPerView: 3.58,
+              },
+            }}
             spaceBetween={24}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
@@ -52,8 +99,8 @@ const Gaming = () => {
             slidesPerView={4}
             className="mySwiper"
           >
-            {GameData.map((items, index) => (
-              <SwiperSlide>
+            {data.map((items, index) => (
+              <SwiperSlide key={index}>
                 <GameProjuct
                   Image={items.Image}
                   title={items.title}

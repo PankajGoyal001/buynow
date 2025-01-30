@@ -1,0 +1,22 @@
+[
+    {
+        "Images":"FreeDelivery.svg",
+        "Title":"Free delivery",
+        "Text":"Delivery is free for orders above $50.00"
+    },
+    {
+        "Images":"Return.svg",
+        "Title":"Easy Return",
+        "Text":"Money back after 5 days "
+    },
+    {
+        "Images":"Payment.svg",
+        "Title":"Flexible Payment",
+        "Text":"Multiple credit cards options Support"
+    },
+    {
+        "Images":"Support.svg",
+        "Title":"24/7 Support",
+        "Text":"We available all time for you"
+    }
+]

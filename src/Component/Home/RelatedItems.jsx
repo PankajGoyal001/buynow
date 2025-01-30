@@ -12,10 +12,10 @@ const RelatedItems = () => {
   const swiperRef = useRef();
   return (
     <>
-      <div className="container mt-20">
-        <div className="flex  flex-col gap-10 ">
+      <div className="container md:py-10 py-[25px]">
+        <div className="flex  flex-col md:gap-10 gap-5 ">
           <div className="flex items-end justify-between">
-            <h1 className="text-[34px] leading-[42px] font-heebo_Medium text-gray-graystrong tracking-wide">
+            <h1 className="md:text-[34px]  leading-[42px] font-heebo_Medium text-gray-graystrong text-2xl md:tracking-wide">
               Related items for you
             </h1>
             <div className="md:flex max-w-[95px] group: hover:cursor-pointer hidden items-center gap-[10px] h-[22px] w-full ">
@@ -39,24 +39,24 @@ const RelatedItems = () => {
               pagination={false}
               loop={true}
               navigation={false}
-              // breakpoints={{
-              //   0: {
-              //     width: 425,
-              //     slidesPerView: 3.8,
-              //   },
-              //   640: {
-              //     width: 640,
-              //     slidesPerView: 3.6,
-              //   },
-              //   640: {
-              //     width: 768,
-              //     slidesPerView: 4.3,
-              //   },
-              //   768: {
-              //     width: 1024,
-              //     slidesPerView: 4,
-              //   },
-              // }}
+              breakpoints={{
+                0: {
+                  width: 425,
+                  slidesPerView: 1.9,
+                },
+                425: {
+                  width: 640,
+                  slidesPerView: 2.5,
+                },
+                640: {
+                  width: 768,
+                  slidesPerView: 3.5,
+                },
+                768: {
+                  width: 1024,
+                  slidesPerView: 3.58,
+                },
+              }}
               spaceBetween={24}
               onBeforeInit={(swiper) => {
                 swiperRef.current = swiper;
@@ -65,27 +65,17 @@ const RelatedItems = () => {
               className="mySwiper"
             >
               {RelatedData.map((items, index) => (
-                <SwiperSlide>
-                <div className="flex flex-col gap-5 border rounded-[20px] ">
-                  <img className="max-w-[270px] w-full h-[249px]"
-                    src={`src/assets/Images/${items.Image}`}
-                    alt="product_image"
-                  />
-                  <div className="flex flex-col gap-[10px]">
-                    <div className="flex flex-col px-5 pb-5 gap-[10px]">
-                      <h2 className="text-base font-inter_regular tracking-[0.15px] text-gray-graydark">{items.Name}</h2>
-                      <div className="flex gap-[10px]">
-                        <p className="">{items.Price}</p>
-                        <img src={`src/assets/svg/${items.Rating}`} alt="rating_star" />
-                      </div>
-                      <span className="border-b border"></span>
-                      <div className="flex justify-between gap-[10px]">
-                        <p className="">{items.Stoke}</p>
-                        <img className="bg-purple-Purple_dark p-[5px] rounded-full" src={`src/assets/svg/${items.Shop}`} alt="Shop" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <SwiperSlide key={index}>
+                <RelatedCards
+                Image={items.Image}
+                Heart={items.Heart}
+                Name={items.Name}
+                Price={items.Price}
+                Rating={items.Rating}
+                Stoke={items.Stoke}
+                Shop={items.Shop}
+                
+                />
                 </SwiperSlide>
               ))}
             </Swiper>

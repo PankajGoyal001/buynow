@@ -3,21 +3,18 @@
         "Image":"Galaxy53.png",
         "Discount":"20% off",
         "Price":"$ 300.00",
-        "Name":"Samcung Galacy 53 5G ",
-        "Head":"TODAY OFFERS"
+        "Name":"Samcung Galacy 53 5G "
     },
     {
         "Image":"BasBuds.png",
         "Discount":"20% off",
         "Price":"$ 300.00",
-        "Name":"Boult Audio Bass Buds",
-        "Head":"MONTHLY OFFERS"
+        "Name":"Boult Audio Bass Buds"
     },
     {
         "Image":"NewTab.png",
         "Discount":"20% off",
         "Price":"$ 300.00",
-        "Name":"Samcung Galacy Tab S9",
-        "Head":"COMMING SOON"
+        "Name":"Samsung Galacy Tab S9"
     }
 ]

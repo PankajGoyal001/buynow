@@ -1,0 +1,109 @@
+[
+    {
+        "Image":"AppleWatch1.png",
+        "Name":"Apple Watch Series 6",
+        "Price":"$ 210.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch2.png",
+        "Name":"Apple Watch SE",
+        "Price":"$ 320.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },{
+        "Image":"AppleWatch3.png",
+        "Name":"Apple Watch Series 6",
+        "Price":"$ 108.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch4.png",
+        "Name":"Apple Watch Series 7",
+        "Price":"$ 158.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch5.png",
+        "Name":"Handbag for woman",
+        "Price":"$ 310.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch6.png",
+        "Name":"Apple Watch SE",
+        "Price":"$ 420.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch7.png",
+        "Name":"Apple Watch SE",
+        "Price":"$ 210.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch8.png",
+        "Name":"Apple Watch Series 7 ",
+        "Price":"$ 108.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch9.png",
+        "Name":"Apple watch SE",
+        "Price":"$ 320.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch10.png",
+        "Name":"Handbag for woman",
+        "Price":"$ 310.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch11.png",
+        "Name":"Apple Watch Series 7",
+        "Price":"$ 320.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    },
+    {
+        "Image":"AppleWatch12.png",
+        "Name":"Apple Watch Series 7",
+        "Price":"$ 108.00",
+        "Rating":"Rating_Star.svg",
+        "Stoke":"In stock",
+        "Shop":"cart.svg",
+        "Heart":"Heart.svg"
+    }
+]
