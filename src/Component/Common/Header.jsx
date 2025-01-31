@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [rotate, setRotate] = useState(false);
-  console.log(rotate);
+
 
   return (
     <header className="border-b">
@@ -76,8 +76,10 @@ function Header() {
                 <img src={badge} alt="badge" />
               </div>
               <span className="w-[1px] h-5 border-r lg:block hidden rounded-[6px] opacity-90"></span>
+              <Link to={"/contact"}>
               <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-orange-600 " src={contact} alt="Contact" />
               <img className=" sm:hidden" src={navbar} alt="navbar" />
+              </Link>
             </div>
           </div>
         </div>

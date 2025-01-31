@@ -5,7 +5,7 @@ const SpecialOffer = () => {
   return (
     <>
       <div className="container md:py-10 py-[25px]">
-        <div className="flex flex-col overflow-scroll gap-10">
+        <div className="flex flex-col overflow-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] gap-10">
           <div className="flex border-b gap-[10px]">
             <p className="px-2 py-3 font-inter_regular text-sm leading-6 tracking-[0.5px] hover:text-purple-Purple_dark text-gray-graydark hover:border-b-2 hover:border-purple-Purple_dark">TODAY OFFERS</p>
             <p className="px-2 py-3 font-inter_regular text-sm leading-6 tracking-[0.5px] hover:text-purple-Purple_dark text-gray-graydark hover:border-b-2 hover:border-purple-Purple_dark">MONTHLY OFFERS</p>

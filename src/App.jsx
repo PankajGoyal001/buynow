@@ -5,6 +5,7 @@ import Footer from "./Component/Common/Footer";
 import Home from "./Pages/Home";
 import Product from "./Pages/Product";
 import TopDeal from "./Pages/TopDeal";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
           <Route path="/topdeals" element={<TopDeal />} />
           <Route path="/Product" element={<Product />} />
         </Routes>

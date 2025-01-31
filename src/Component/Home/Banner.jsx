@@ -10,6 +10,7 @@ const Banner = () => {
     <>
     {/* <div className="bg-[url('src/assets/Images/background.png')] w-full bg-cover"> */}
       <div className="container pt-20 pb-10">
+
         <div className=" justify-between md:flex-row flex flex-col items-center pb-[50px] md:pb-[65px]">
           <div className="grid md:gap-10 gap-[30px] font-heebo_Medium">
             <div className="grid gap-5 max-w-[490px] ">
