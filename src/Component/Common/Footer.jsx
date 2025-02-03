@@ -85,7 +85,7 @@ const Footer = () => {
                     <p className="text-white font-heebo_Medium text-xl leading-8 ">
                       {items.head}
                     </p>
-                    <ul className="flex text-gray-graylight text-base font-inter_regular  flex-col gap-5" key={index}> 
+                    <ul className="flex text-gray-graylight text-base font-inter_regular  flex-col gap-5" key={index}>
                       <li>{items.text}</li>
                       <li>{items.text1}</li>
                       <li>{items.text2}</li>

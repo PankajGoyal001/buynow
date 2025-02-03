@@ -4,20 +4,34 @@ import arrayDown from "../../assets/svg/Arrowlineright.svg";
 import DealData from "../../json/dealing.json";
 import CloseButton from "../../assets/svg/closeButton.svg";
 import ArrowUp from "../../assets/svg/ArrowUp.svg";
+import arrowRight from "../../assets/svg/ArrowRight.svg";
+
 
 
 const DealsProduct = () => {
     const [Filter, setFilter] = useState(false)
     const [rotate, setRotate] = useState(false);
+    const [rotate1, setRotate1] = useState(false);
+    const [rotate2, setRotate2] = useState(false);
 
     return (
         <>
             <div className="container relative">
+            <div className="flex flex-col pt-20 gap-10">
+                <div className="flex flex-col gap-[10px]">
+                    <h1 className='font-heebo_Medium text-[34px] leading-[42px] text-gray-graystrong'>Top Deals</h1>
+                    <div className="sm:flex hidden items-center pb-5 border-b border-[#42265914]">
+                        <p className="text-gray-graydark text-base tracking-[0.15px] font-inter_regular">Home</p>
+                        <img className='' src={arrowRight} alt="arrow" />
+                        <p className="text-base tracking-[0.15px] font-inter_regular text-gray-graystrong ">Products</p>
+                    </div>
+            </div>
                 <div className="flex flex-col gap-6'">
                     <div className="sm:flex justify-between grid  pb-6 items-end"> <div className="flex flex-col gap-[10px]">
                         <h2 className="text-xl leading-8 font-heebo_Medium tracking-[0.15px] text-gray-graystrong">All Deals</h2>
                         <h5 className="text-base tracking-[0.15px] font-inter_regular text-gray-graydark">Showing 1–9 of 120 results</h5>
                     </div>
+
 
                         <div className="flex flex-col">
                             <div className={`flex ${Filter ? "flex-row-reverse" : "flex-row"} gap-[10px]`}>
@@ -37,14 +51,16 @@ const DealsProduct = () => {
                                             <div className=" border rounded-[20px] flex gap-[10px] flex-col">
                                                 <div className="flex bg-white sticky top-0 items-center border-b p-5 justify-between">
                                                     <h2 className='font-heebo_Medium text-xl leading-8 tracking-[0.15px] text-gray-graystrong'>Filter </h2>
-                                                    <button ><img className='hover:cursor-pointer' src={CloseButton} alt="close" /></button>
+                                                    <button onClick={() => setFilter(false)} >
+                                                        <img className='hover:cursor-pointer' src={CloseButton} alt="close" />
+                                                    </button>
                                                 </div>
                                                 <div className="flex flex-col p-5 gap-[10px]">
                                                     <button onClick={() => setRotate(!rotate)} className="flex justify-between  items-center rounded-[30px]" >
                                                         <p className="text-gray-graystrong text-base tracking-[0.15px] font-inter_Medium" > Price</p>
                                                         <img className={`transition-all duration-200 ${rotate && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
                                                     </button>
-                                                    {
+                                                    { 
                                                         rotate && (<>
                                                             <div className='flex flex-col  gap-[5px]'>
                                                                 <div className="flex justify-between gap-[10px]">
@@ -102,10 +118,10 @@ const DealsProduct = () => {
                                                     }
                                                 </div>
                                             </div>
-                                        <div className="flex p-5 sticky bottom-0 bg-white gap-5">
-                                            <button className='max-w-[252px] w-full'><p className="text-[15px] leading-[26px] font-inter_Medium tracking-[0.46px]">Clear All</p></button>
-                                            <button className='max-w-[252px] w-full bg-purple-Purple_dark py-2 rounded-[30px]'><p className="text-white text-[15px] leading-[26px] font-inter_Medium tracking-[0.46px]">Apply</p></button>
-                                        </div>
+                                            <div className="flex p-5 sticky bottom-0 bg-white gap-5">
+                                                <button className='max-w-[252px] w-full'><p className="text-[15px] leading-[26px] font-inter_Medium tracking-[0.46px]">Clear All</p></button>
+                                                <button className='max-w-[252px] w-full bg-purple-Purple_dark py-2 rounded-[30px]'><p className="text-white text-[15px] leading-[26px] font-inter_Medium tracking-[0.46px]">Apply</p></button>
+                                            </div>
                                         </div>
                                     </>)
                                 }
@@ -139,6 +155,8 @@ const DealsProduct = () => {
                     </div>
                 </div>
             </div>
+        </div>
+
         </>
     )
 }

@@ -44,10 +44,7 @@ function Header() {
                 data &&
                 data?.map((items, index) => (
                   <Link to={`${items.href}`}   key={'header'+index} > 
-                  <li
-                    className="list-none hover:border-b border-gray-graylight hover:text-red-600 cursor-pointer "
-                  
-                  >
+                  <li className="list-none hover:border-b border-gray-graylight hover:text-red-600 cursor-pointer ">
                    {items?.name}
                   </li>
                     </Link>
@@ -77,7 +74,7 @@ function Header() {
               </div>
               <span className="w-[1px] h-5 border-r lg:block hidden rounded-[6px] opacity-90"></span>
               <Link to={"/contact"}>
-              <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-orange-600 " src={contact} alt="Contact" />
+              <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-orange-400 " src={contact} alt="Contact" />
               <img className=" sm:hidden" src={navbar} alt="navbar" />
               </Link>
             </div>
