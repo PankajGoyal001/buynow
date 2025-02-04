@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import TagColor from "../../assets/svg/Tags.svg";
 import Macbook from "../../assets/Images/MacBook.png";
 import Macbook1 from "../../assets/Images/MacBook1.png";
 
 const CtaProduct = () => {
-  // const [Color, setColor] = useState(false)
+  const [selectColor, setselectColor] = useState(false)
   return (
     <>
       <div className="container">
@@ -19,9 +19,9 @@ const CtaProduct = () => {
               </div>
               <div className="flex rounded-[30px] max-w-[115px] bg-white gap-[15px] p-[5px] ">
                 {["#dfe8f2", "#dde876", "#81c785", "#5d9ede"].map((items, index) => (
-                  <button key={index}
+                  <button key={index} onClick={() => setselectColor(items)}
                     style={{ backgroundColor: items }}
-                    className="rounded-full w-[11px] h-[11px] border border-black m-[2px]"></button>
+                    className={`rounded-full w-[11px] h-[11px] border  ${selectColor === items ? "border-black" : "border-none" } m-[2px]`}></button>
                 ))}
               </div>
             </div>

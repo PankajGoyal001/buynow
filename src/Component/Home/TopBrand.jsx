@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import Back from "../../assets/svg/ArrowBackFilled.svg";
 import Next from "../../assets/svg/ArrowBackFilled.svg";
 import Branded from "../../json/Brand.json";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper/modules';
+import "swiper/css";
 
 const TopBrand = () => {
+  const swiperRef = useRef();
+
   return (
     <>
       <div className="container">
@@ -29,25 +34,58 @@ const TopBrand = () => {
                 />
               </div>
             </div>
-            <div className="flex gap-6">
-              {
-                Branded.map((items, index) => (
-                  <div key={index} className="flex flex-col p-10 border rounded-[20px] gap-5">
-                    <div className="flex flex-col items-center gap-[10px]">
-                      <h4 className="text-gray-graystrong font-heebo_Medium text-xl leading-[133.3%] tracking-[0.15px]">{items.Name}</h4>
-                      <div className="flex items-center flex-col">
-                        <p className="text-gray-graydark font-inter_regular text-sm tracking-[0.17px]">{items.Price}</p>
-                        <p className="text-gray-graydark font-inter_regular text-sm tracking-[0.17px]">{items.Discount}</p>
+            <div className="">
+              <Swiper
+                breakpoints={{
+                  0: {
+                    slidesPerView: 2
+                  },
+                  500: {
+                    slidesPerView: 2
+                  },
+                  768: {
+                    slidesPerView: 3
+                  },
+                }}
+                loop={true}
+                spaceBetween={24}
+                onBeforeInit={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
+
+                slidesPerView={2}
+                className="mySwiper"
+              >
+                {
+                  Branded.map((items, index) => (
+                    <SwiperSlide key={index + Date.now() + items}>
+
+                      <div key={index} className="flex flex-col p-[10px] sm:p-10 border rounded-[20px] gap-[14px] sm:gap-5">
+                        <div className="flex flex-col items-center gap-[10px]">
+                          <h4 className="text-gray-graystrong font-heebo_Medium text-base sm:text-xl leading-[133.3%] hidden sm:block tracking-[0.15px]">{items.Name}</h4>
+                          <h4 className="text-gray-graystrong font-heebo_Medium text-base sm:text-xl leading-[133.3%] sm:hidden tracking-[0.15px]">{items.Name2}</h4>
+                          <div className="flex items-center flex-col">
+                            <p className="text-gray-graydark font-inter_regular text-sm  tracking-[0.17px]">{items.Price}</p>
+                            <p className="text-gray-graydark font-inter_regular text-sm tracking-[0.17px]">{items.Discount}</p>
+                          </div>
+                          <div className="flex px-2 hover:cursor-pointer py-[6px] gap-[10px]">
+                            <p className="text-purple-Purple_dark text-sm leading-[100%] tracking-[0.4px]">{items.buy}</p>
+                            <img src={`/src/assets/svg/${items.array}`} alt="" />
+                          </div>
+                        </div>
+                        <img src={`/src/assets/images/${items.Images}`} alt="" />
                       </div>
-                      <div className="flex px-2 hover:cursor-pointer py-[6px] gap-[10px]">
-                        <p className="text-purple-Purple_dark text-sm leading-[100%] tracking-[0.4px]">{items.buy}</p>
-                        <img src={`/src/assets/svg/${items.array}`} alt="" />
-                      </div>
-                    </div>
-                    <img src={`/src/assets/images/${items.Images}`} alt="" />
-                  </div>
-                ))
-              }
+                    </SwiperSlide>
+
+                  ))
+                }
+              </Swiper>
+
             </div>
           </div>
         </div>

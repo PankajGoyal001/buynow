@@ -3,12 +3,9 @@ import Collection from "../../json/Collection.json";
 import CollectionData from "../../json/collectionData.json";
 import { Link } from "react-router-dom";
 import CollectionCard from "../cards/CollectionCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper/modules';
-import "swiper/css";
+
 
 const TopCollection = () => {
-  const swiperRef = useRef();
 
   return (
     <>
@@ -36,33 +33,10 @@ const TopCollection = () => {
           </div>
           <div className="w-full">
 
-            <Swiper
-              breakpoints={{
-                500: {
-                  slidesPerView: 2
-                },
-                768: {
-                  slidesPerView: 3
-                },
-              }}
-              loop={true}
-              spaceBetween={24}
-              onBeforeInit={(swiper) => {
-                swiperRef.current = swiper;
-              }}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay]}
-
-              slidesPerView={1}
-              className="mySwiper"
-            >
+           
               {
                 CollectionData.map((items, index) => (
-                  <SwiperSlide key={index + Date.now() + items}>
-                    <CollectionCard
+                    <CollectionCard key={index + Date.now() + items}
                       Image1={items.Image1}
                       Image2={items.Image2}
                       Image3={items.Image3}
@@ -71,10 +45,8 @@ const TopCollection = () => {
                       Name={items.Name}
                       Array={items.Array}
                     />
-                  </SwiperSlide>
                 ))
               }
-            </Swiper>
           </div>
         </div>
       </div>

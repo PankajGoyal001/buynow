@@ -25,14 +25,5 @@
         "Name":"Smart Watches",
         "View":"VIEW ALL",
         "Array":"Arrowlineright.svg"
-    },
-    {
-        "Image1":"bigWatch1.png",
-        "Image2":"bigWatch2.png",
-        "Image3":"bigWatch3.png",
-        "Image4":"bigWatch4.png",
-        "Name":"New Watches",
-        "View":"VIEW ALL",
-        "Array":"Arrowlineright.svg"
     }
 ]

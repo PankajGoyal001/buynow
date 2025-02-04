@@ -6,30 +6,36 @@ import ArrowUp from "../../assets/svg/ArrowUp.svg";
 import arrowRight from "../../assets/svg/ArrowRight.svg";
 
 const Banner1 = () => {
+  const [selectColor, setselectColor] = useState(false)
   const [Filter, setFilter] = useState(false);
   const [rotate, setRotate] = useState(false);
+  const [rotate1, setRotate1] = useState(false);
+  const [rotate2, setRotate2] = useState(false);
+  const [rotate3, setRotate3] = useState(false);
+  const [rotate4, setRotate4] = useState(false);
+  const [rotate5, setRotate5] = useState(false);
 
   return (
     <>
       <div className="container ">
-        <div className="relative pt-5">
+        <div className="relative sm:pt-20 pt-10">
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-5 sm:gap-10">
               <div className="flex flex-col gap-[10px]">
                 <h1 className='font-heebo_Medium text-[34px] leading-[123.5%] text-gray-graystrong'>Apple watches</h1>
-                <div className="flex items-center pb-5 border-b border-[#42265914]">
+                <div className="sm:flex hidden items-center pb-5 border-b border-[#42265914]">
                   <p className="text-gray-graydark text-base tracking-[0.15px] font-inter_regular">Home</p>
                   <img className='' src={arrowRight} alt="arrow" />
                   <p className="text-base tracking-[0.15px] font-inter_regular text-gray-graystrong ">Products</p>
                 </div>
               </div>
-              <div className="flex items-center justify-between">
+              <div className="sm:flex grid gap-[10px] w-full items-center justify-between">
                 <h3 className='text-base font-inter_regular tracking-[0.15px] text-gray-graydark'>Showing 1–9 of 200 results</h3>
 
                 <div className="flex flex-col">
-                  <div className={`flex ${Filter ? "flex-row-reverse" : "flex-row"} gap-[10px]`}>
+                  <div className={`flex ${Filter ? "flex-row-reverse  " : "flex-row"} gap-[10px]`}>
                     <button onClick={() => setFilter(!Filter)}
-                      className="flex items-center px-4 py-[6px] border-[#42265980] border rounded-[30px] gap-2">
+                      className={`flex items-center px-4 py-[6px] border-[#42265980] border rounded-[30px] gap-2 ${Filter ? "hidden " : ""}`}>
                       <p className="text-sm leading-[24px] font-inter_Medium tracking-[0.4px] text-purple-Purple_dark">Filter</p>
                       <img src={Outlines} alt="Outlines" />
                     </button>
@@ -40,11 +46,12 @@ const Banner1 = () => {
                     </button>
                     {
                       Filter && (<> 
-                        <div className=" absolute max-w-[270px] w-full bg-white top-[90px] right-5">
+                        <div className=" absolute max-w-[270px] w-full bg-white top-[220px]">
                           <div className=" border rounded-[20px] flex gap-[10px] flex-col">
                             <div className="flex items-center p-5 justify-between">
                               <h2 className='font-heebo_Medium text-xl leading-[133.3%] tracking-[0.15px] text-gray-graystrong'>Filter </h2>
-                              <p className="font-inter_Medium text-sm leading-[24px] tracking-[0.4px] text-purple-Purple_dark px-2 py-[6px]">Clear all</p>
+                              <button onClick={() => setFilter(false)}
+                             className="font-inter_Medium text-sm leading-[24px] tracking-[0.4px] text-purple-Purple_dark px-2 py-[6px]">Clear all</button>
                             </div>
                               
                             <span className='border-b'></span>
@@ -67,12 +74,12 @@ const Banner1 = () => {
                               
                             <span className='border-b'></span>
                             <div className="flex flex-col p-5 gap-[10px]">
-                              <button onClick={() => setRotate(!rotate)} className="flex justify-between  items-center rounded-[30px]" >
+                              <button onClick={() => setRotate1(!rotate1)} className="flex justify-between  items-center rounded-[30px]" >
                                 <p className="text-gray-graystrong text-base tracking-[0.15px] font-inter_Medium" > Price</p>
-                                <img className={`transition-all duration-200 ${rotate && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
+                                <img className={`transition-all duration-200 ${rotate1 && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
                               </button>
                               {
-                                rotate && (<>
+                                rotate1 && (<>
                                 <ul className='flex flex-col '>
                                   <input className='' type="range" id='price' />
                                   <div className="flex items-center justify-between">
@@ -86,33 +93,45 @@ const Banner1 = () => {
                              
                             <span className='border-b'></span>
                             <div className="flex flex-col gap-[10px]">
-                              <button onClick={() => setRotate(!rotate)} className="flex justify-between p-5 items-center rounded-[30px]" > 
+                              <button onClick={() => setRotate2(!rotate2)} className="flex justify-between p-5 items-center rounded-[30px]" > 
                                 <p className="text-gray-graystrong text-base tracking-[0.15px] font-inter_Medium" > Color</p>
-                                <img className={`transition-all duration-200 ${rotate && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
+                                <img className={`transition-all duration-200 ${rotate2 && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
                               </button>
+                              {
+                                rotate2 && (<>
+                                  <div className="grid grid-cols-6 gap-[15px]">
+                                {["#202a2e","#5d9ede","#81c785","#4ccfe0","#4cb5ab","#78909c","#67517a","#ff8a66","#ffb84d","#b967c7","#d15a82","#f06291"]?.map((items,index)=>(
+                                  <button key={index} onClick={() => setselectColor(items)}
+                                  style={{ backgroundColor: items }}
+                                  className={`rounded-full  w-[25px] h-[25px] border  ${selectColor === items ? "border-black" : "border-none" } m-[2px]`}></button>
+                                ))}
+                                  </div>              
+                                </>)
+                              }
+                              <p className="text-purple-Purple_dark text-base font-inter_regular tracking-[0.15px]">+12 more</p>
                             </div>
                               
                             <span className='border-b'></span>
                             <div className="flex flex-col gap-[10px]">
-                              <button onClick={() => setRotate(!rotate)} className="flex justify-between p-5 items-center rounded-[30px]" >
+                              <button onClick={() => setRotate3(!rotate3)} className="flex justify-between p-5 items-center rounded-[30px]" >
                                 <p className="text-gray-graystrong text-base tracking-[0.15px] font-inter_Medium" > Brands</p>
-                                <img className={`transition-all duration-200 ${rotate && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
+                                <img className={`transition-all duration-200 ${rotate3 && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
                               </button>
                             </div>
                               
                             <span className='border-b'></span>
                             <div className="flex flex-col gap-[10px]">
-                              <button onClick={() => setRotate(!rotate)} className="flex justify-between p-5 items-center rounded-[30px]" >
+                              <button onClick={() => setRotate4(!rotate4)} className="flex justify-between p-5 items-center rounded-[30px]" >
                                 <p className="text-gray-graystrong text-base tracking-[0.15px] font-inter_Medium" > Customer review</p>
-                                <img className={`transition-all duration-200 ${rotate && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
+                                <img className={`transition-all duration-200 ${rotate4 && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
                               </button>
                             </div>   
 
                             <span className='border-b'></span>
                             <div className="flex flex-col gap-[10px]">
-                              <button onClick={() => setRotate(!rotate)} className="flex justify-between p-5 items-center rounded-[30px]" >
+                              <button onClick={() => setRotate5(!rotate5)} className="flex justify-between p-5 items-center rounded-[30px]" >
                                 <p className="text-gray-graystrong text-base tracking-[0.15px] font-inter_Medium" > Discount</p>
-                                <img className={`transition-all duration-200 ${rotate && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
+                                <img className={`transition-all duration-200 ${rotate5 && "rotate-180"}  opacity-20  group-hover:opacity-100`} src={ArrowUp} alt="arrow" />
                               </button>
                             </div>   
                           </div>
@@ -123,7 +142,7 @@ const Banner1 = () => {
                 </div>
               </div>
             </div>
-            <div className={`grid ${Filter ? "grid-cols-3 gap-6 w-[858px] " : "grid-cols-4 gap-6 w-full"} pb-10 `} >
+            <div className={`grid md:gap-6 ${Filter ? "grid-cols-3 gap-6 w-[858px] " : "grid-cols-4 gap-6 w-full"} pb-10 `} >
               {
                 WatchesData.map((items, index) => (
                   <div className="flex flex-col w-full  h-full gap-[14px] md:gap-5 border rounded-[20px] hover:scale-[0.95] duration-200 hover:shadow-lg relative" key={index}>
@@ -137,10 +156,10 @@ const Banner1 = () => {
                         <h2 className="md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark">{items.Name}</h2>
                         <div className="flex justify-between">
                           <p className="md:text-xl font-heebo_Medium whitespace-nowrap  text-xl leading-[133.3%]">{items.Price}</p>
-                          <img className='hidden md:block' src={`src/assets/svg/${items.Rating}`} alt="rating_star" />
+                          <img src={`src/assets/svg/${items.Rating}`} alt="rating_star" />
                         </div>
                         <span className="border-b border"></span>
-                        <div className="flex justify-between  items-center gap-[10px]">
+                        <div className="flex justify-between pb-[14px] md:py-0 items-center gap-[10px]">
                           <p className="text-purple-Purple_light text-sm tracking-[0.17px] font-inter_regular">{items.Stoke}</p>
                           <img className="bg-purple-Purple_dark p-[5px] hover:cursor-pointer rounded-full" src={`src/assets/svg/${items.Shop}`} alt="Shop" />
                         </div>
