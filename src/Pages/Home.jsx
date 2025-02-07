@@ -27,7 +27,7 @@ const Home = () => {
         <RelatedItems/>
         <SpecialOffer/>
         <NewArrivals data={NewArrivalsData} title={"New arrivals products "}/>
-        <TopCollection/>
+        <TopCollection/>  
         <TopBrand/>
         <Partner/>
         <Process/>

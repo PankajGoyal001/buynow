@@ -47,7 +47,6 @@ const TopBrand = () => {
                     slidesPerView: 3
                   },
                 }}
-                loop={true}
                 spaceBetween={24}
                 onBeforeInit={(swiper) => {
                   swiperRef.current = swiper;
@@ -67,8 +66,8 @@ const TopBrand = () => {
 
                       <div key={index} className="flex flex-col p-[10px] sm:p-10 border rounded-[20px] gap-[14px] sm:gap-5">
                         <div className="flex flex-col items-center gap-[10px]">
-                          <h4 className="text-gray-graystrong font-heebo_Medium text-base sm:text-xl leading-[133.3%] hidden sm:block tracking-[0.15px]">{items.Name}</h4>
-                          <h4 className="text-gray-graystrong font-heebo_Medium text-base sm:text-xl leading-[133.3%] sm:hidden tracking-[0.15px]">{items.Name2}</h4>
+                          <h4 className="text-gray-graystrong font-heebo_Medium text-base sm:text-xl truncate leading-[133.3%] hidden sm:block tracking-[0.15px]">{items.Name}</h4>
+                          {/* <h4 className="text-gray-graystrong font-heebo_Medium text-base sm:text-xl leading-[133.3%] sm:hidden tracking-[0.15px]">{items.Name2}</h4> */}
                           <div className="flex items-center flex-col">
                             <p className="text-gray-graydark font-inter_regular text-sm  tracking-[0.17px]">{items.Price}</p>
                             <p className="text-gray-graydark font-inter_regular text-sm tracking-[0.17px]">{items.Discount}</p>

@@ -2,7 +2,6 @@
     {
         "head":"Price: $190.00 (Viper 16MP 4K HD camera)",
         "image":"Camera.png",
-        "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
         "array":"Arrowlineright.svg"
@@ -10,7 +9,6 @@
     {
         "head":"Price: $250.00 (Noise Cancellation Headphones)",
         "image":"Headphone.png",
-        "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
         "array":"Arrowlineright.svg"
@@ -18,7 +16,6 @@
     {
         "head":"Price: $200.00 (ASUS VivoBook 15)",
         "image":"laptop.png",
-        "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
         "array":"Arrowlineright.svg"
@@ -26,7 +23,6 @@
     {
         "head":"Price: $300.00 (Noise Cancellation Headphones)",
         "image":"WirelessHeadphone.png",
-        "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
         "array":"Arrowlineright.svg"
@@ -34,7 +30,6 @@
     {
         "head":"Price: $600.00 (Galaxy S10 FE 4G)",
         "image":"galaxy.png",
-        "color":"ColorDots.svg",
         "shop":"cart.svg",
         "buy":"BUY",
         "array":"Arrowlineright.svg"

@@ -8,7 +8,7 @@ import Buttons from "../ui/Buttons";
 const Banner = () => {
   return (
     <> 
-      {/* <div className="bg-[url('src/assets/Images/background.png')] w-full bg-cover"> */}
+      {/* <div className="bg-[url('src/assets/Images/background.png')] w-full  bg-cover"> */}
       <div className="container">
         <div className="pt-20 pb-10">
 
@@ -21,7 +21,7 @@ const Banner = () => {
                   </h3>
                   <img className="md:w-6 w-5" src={Fire} alt="fire" />
                 </div>
-                <h1 className="text-6xl leading-[120%] font-heebo_Medium tracking-tighter">
+                <h1 className="sm:text-6xl text-[34px] leading-[41px] sm:leading-[120%] font-heebo_Medium tracking-wide sm:tracking-tighter">
                   Best Place To Find And<span className="text-[#67517A] "> Buy Products</span>For Your Need
                 </h1>
               </div>
@@ -59,6 +59,7 @@ const Banner = () => {
 
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };

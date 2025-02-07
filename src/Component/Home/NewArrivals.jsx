@@ -12,7 +12,7 @@ const NewArrivals = ({ data, title }) => {
   return (
     <div className="container ">
       <div className=" md:py-10 py-[25px]">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-5 sm:gap-10">
           <div className="flex items-end justify-between">
             <h1 className="sm:text-[34px] text-2xl leading-[123.5%] font-heebo_Medium text-gray-graystrong tracking-wide">
               {title}
