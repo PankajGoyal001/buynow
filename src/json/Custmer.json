@@ -1,0 +1,32 @@
+[
+    {
+        "Images":"GreenStar.svg",
+        "Rate":"5",
+        "Range":"Progress.svg",
+        "Rating":"83%"
+    },
+    {
+        "Images":"GreenStar.svg",
+        "Rate":"4",
+        "Range":"Progress2.svg",
+        "Rating":"08%"
+    },
+    {
+        "Images":"GreenStar.svg",
+        "Rate":"3",
+        "Range":"Progress3.svg",
+        "Rating":"03%"
+    },
+    {
+        "Images":"GreenStar.svg",
+        "Rate":"2",
+        "Range":"Progress4.svg",
+        "Rating":"01%"
+    },
+    {
+        "Images":"GreenStar.svg",
+        "Rate":"1",
+        "Range":"Progress5.svg",
+        "Rating":"03%"
+    }
+]

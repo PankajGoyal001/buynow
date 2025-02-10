@@ -16,6 +16,12 @@
     .SameText{
         @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark
     }
+    .Copytext{
+        @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graystrong
+    }
+    .BorderSolid{
+        @apply border-[#42265914] border-b rounded-[5px]
+    }
 }
 
 

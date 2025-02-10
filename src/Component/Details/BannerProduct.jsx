@@ -43,7 +43,7 @@ const BannerProduct = () => {
                                 </div>
                                 <div className="flex gap-[10px]">
                                     {["ProductWatch1.png", "ProductWatch2.png", "ProductWatch3.png", "ProductWatch4.png"].map((items, index) => (
-                                        <div key={index} className="p-[7px] rounded-[10px] border-[#42265980] hover:border">
+                                        <div key={index} className="p-[7px] rounded-[10px] border-[#42265980] cursor-pointer hover:transition-transform hover:scale-90 hover:border">
                                             <img src={`src/assets/Images/${items}`} alt="" />
                                         </div>
                                     ))}
