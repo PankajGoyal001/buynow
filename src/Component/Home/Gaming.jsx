@@ -16,7 +16,7 @@ const Gaming = ({Heading , data,info,step}) => {
           <div className="flex flex-col gap-5">
             {step === "solid" ? (
               <>
-                <h1 className="sm:text-[34px] sm:leading-[123.5%] text-2xl font-heebo_Medium text-gray-graystrong tracking-wide">
+                <h1 className="CommonHead">
                   {Heading}
                 </h1>
                 <div className="flex items-end justify-between">

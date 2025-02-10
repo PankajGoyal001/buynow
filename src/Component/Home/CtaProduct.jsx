@@ -17,11 +17,11 @@ const CtaProduct = () => {
                 <p className="text-purple-Purple_dark font-heebo_Medium text-5xl leading-[123.5%] hidden sm:block">$ 800.00</p>
                 <p className="font-heebo_Medium text-2xl text-purple-Purple_dark sm:hidden ">$ 500.00</p>
               </div>
-              <div className="flex rounded-[30px] max-w-[115px] bg-white gap-[15px] p-[5px] ">
+              <div className="flex rounded-[30px] items-center max-w-[115px] bg-white gap-[15px] p-[5px] ">
                 {["#dfe8f2", "#dde876", "#81c785", "#5d9ede"].map((items, index) => (
                   <button key={index} onClick={() => setselectColor(items)}
                     style={{ backgroundColor: items }}
-                    className={`rounded-full w-[11px] h-[11px] border  ${selectColor === items ? "border-black" : "border-none" } m-[2px]`}></button>
+                    className={`rounded-full w-[11px] h-[11px] border  ${selectColor === items ? "border-black p-[6px]" : "border-none" } m-[2px]`}></button>
                 ))}
               </div>
             </div>

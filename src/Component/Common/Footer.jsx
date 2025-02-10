@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import footerdata from "../../json/footer.json";
 import Letter from "../../assets/svg/newsletter.svg";
 import Sender from "../../assets/svg/sender.svg";
@@ -7,8 +7,10 @@ import Message from "../../assets/svg/message.svg";
 import Location from "../../assets/svg/location.svg";
 import Apple from "../../assets/svg/applelogo.svg";
 import Playstore from "../../assets/svg/GooglePlaylogo.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+
   return (
     <footer>
       <div className="md:flex md:justify-between  max-w-[1152px] items-center w-full relative m-auto bg-white mt-10 mb-[-150px] z-1 rounded-[20px] md:px-[50px] p-5  md:py-10 border">
@@ -85,12 +87,14 @@ const Footer = () => {
                     <p className="text-white font-heebo_Medium text-xl leading-8 ">
                       {items.head}
                     </p>
-                    <ul className="flex text-gray-graylight text-base font-inter_regular  flex-col gap-5" key={index}>
-                      <li>{items.text}</li>
-                      <li>{items.text1}</li>
-                      <li>{items.text2}</li>
-                      <li>{items.text3}</li>
-                      <li>{items.text4}</li>
+                    <ul className="flex text-gray-graylight text-base font-inter_regular  flex-col gap-5">
+                      {
+                        items.Links.map((item, index) => (
+                          <Link to={item.href} key={index}>
+                            <li>{item.Text}</li>
+                          </Link>
+                        ))
+                      }
                     </ul>
                   </div>
                 ))}

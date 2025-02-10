@@ -16,7 +16,7 @@ const RelatedItems = () => {
         <div className=" md:py-10 py-[25px]">
           <div className="flex  flex-col md:gap-10 gap-5 ">
             <div className="flex items-end justify-between">
-              <h1 className="md:text-[34px]  leading-[123.5%] font-heebo_Medium text-gray-graystrong text-2xl md:tracking-wide">
+              <h1 className="CommonHead">
                 Related items for you
               </h1>
               <div className="md:flex max-w-[95px] group: hover:cursor-pointer hidden items-center gap-[10px] h-[22px] w-full ">

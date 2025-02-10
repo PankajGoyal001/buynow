@@ -1,0 +1,38 @@
+[
+  {
+    "header": "Today’s Deals",
+    "Text1": "Mobile Phone",
+    "Text2": "Laptop",
+    "Text3": "Watches",
+    "Text4": "Shoes For Man",
+    "Text5": "Shoes Girls",
+    "Text6": "Grooming"
+  },
+  {
+    "header": "Monthly Deals",
+    "Text1": "Baby Toys",
+    "Text2": "Sports Shoes",
+    "Text3": "Shoes For Man",
+    "Text4": "Shoes Girls",
+    "Text5": "Gaming",
+    "Text6": "Toys"
+  },
+  {
+    "header": "All Deals",
+    "Text1": "Jeckets",
+    "Text2": "Tunk",
+    "Text3": "Jeans Pant",
+    "Text4": "Shirt",
+    "Text5": "Grooming",
+    "Text6": "Formal Shirt"
+  },
+  {
+    "header": "Memberships Deals",
+    "Text1": "Clothing",
+    "Text2": "All Shoes",
+    "Text3": "Watches",
+    "Text4": "Jewelry",
+    "Text5": "Hand Bags",
+    "Text6": "Accessories"
+  }
+]

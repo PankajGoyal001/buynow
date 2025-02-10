@@ -15,7 +15,7 @@ const TopBrand = () => {
         <div className=" py-10">
           <div className="flex flex-col gap-10">
             <div className="flex items-end justify-between">
-              <h1 className="text-[34px] leading-[123.5%] font-heebo_Medium text-gray-graystrong tracking-wide">
+              <h1 className="CommonHead">
                 Top Brands Products
               </h1>
               <div className="md:flex max-w-[95px] group: hover:cursor-pointer hidden items-center gap-[10px] h-[22px] w-full ">

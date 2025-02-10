@@ -7,16 +7,21 @@ import badge from "../../assets/svg/badge.svg";
 import contact from "../../assets/svg/Contact.svg";
 import navbar from "../../assets/svg/IconButton.svg";
 import { Link } from "react-router-dom";
+import Popus from "../ui/Popus";
+
 
 function Header() {
   const [rotate, setRotate] = useState(false);
+  const [Show, setShow] = useState(false);
+  const [Show1, setShow1] = useState(false);
+  const [Look, setLook] = useState(false);
 
 
   return (
-    <header className="border-b">
-      <div className="w-full bg-black py-3 ">
+    <header >
+      <div className="w-full border-b bg-black py-3 ">
         <div className="container">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-   ">
             <div className="flex gap-2 items-center">
               <img className="hidden sm:block" src="src/assets/svg/scooty.svg" alt="scooty" />
               <p className="text-xs leading-5  sm:text-sm text-gray-graylight font-heebo opacity-90 ">Free delivery on $100.00</p>
@@ -41,15 +46,18 @@ function Header() {
             <img src={logo} alt="logo" />
             <ul className="md:flex  hidden  text-gray-graydark max-w-[380px] w-full  lg:gap-8 ">
               {
-                data &&
                 data?.map((items, index) => (
-                  <Link to={`${items.href}`}   key={'header'+index} > 
-                  <li className="list-none hover:border-b border-gray-graylight hover:text-red-600 cursor-pointer ">
-                   {items?.name}
-                  </li>
-                    </Link>
+                  <Link to={`${items.href}`} key={'header' + index} >
+                    <button onMouseOver={() => setShow(index)} onMouseLeave={() => setShow()}>
+                      <li className="list-none hover:border-b border-gray-graylight hover:text-red-600 cursor-pointer ">
+                        {items?.name}
+                      </li>
+                    </button>
+                  </Link>
                 ))}
             </ul>
+            {Show === 1 && <Popus DealsPopus={"Solid"} className={"fixed top-[120px] duration-1000 ease-in-out left-[250px] transition-all "} />}
+            {Show === 2 && <Popus HotOfferPopus={"Solid"} className={"fixed top-[120px] duration-1000 ease-in-out left-[250px] transition-all"} />}
           </div>
 
           <div className="flex items-center  sm:gap-[30px] sm:py-[15px]  py-[10px]">
@@ -68,15 +76,22 @@ function Header() {
                 {/* <img src={array} alt="down-array" /> */}
               </div>
               <span className="w-[1px] h-5 border-r hidden lg:block rounded-[6px] opacity-90"></span>
-              <div className="flex">
+              <button onMouseOver={() => setShow1(!Show1)} className="flex">
                 <img src="src/assets/svg/shop.svg" alt="shop" />
                 <img src={badge} alt="badge" />
-              </div>
+              </button>
+              { Show1 && (<>
+                <Popus Cart={"Soid"} />
+              </>)
+              }
               <span className="w-[1px] h-5 border-r lg:block hidden rounded-[6px] opacity-90"></span>
               <Link to={"/contact"}>
-              <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-orange-400 " src={contact} alt="Contact" />
-              <img className=" sm:hidden" src={navbar} alt="navbar" />
+                <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-orange-400 " src={contact} alt="Contact" />
               </Link>
+              <button onClick={() => setLook(!Look)}  >
+                <img className=" sm:hidden" src={navbar} alt="navbar" />
+              </button>
+              
             </div>
           </div>
         </div>

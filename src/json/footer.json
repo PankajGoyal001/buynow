@@ -1,24 +1,69 @@
 [
-    {
-        "head":"Customer support",
-        "text":"Contact us",
-        "text1":"Help center",
-        "text2":"Exchanges",
-        "text3":"Credit cards",
-        "text4":"Debit cards"
-    },
-    {
-        "head":"Contact with us",
-        "text":"Facebook",
-        "text1":"Instagram",
-        "text2":"Twitter",
-        "text3":"Linkedin"
-    },
-    {
-        "head":"About",
-        "text":"Careers",
-        "text1":"About us",
-        "text2":"Blogs",
-        "text3":"News"
-    }
+  {
+    "head": "Customer support",
+    "Links": [
+      {
+        "Text": "Contact us",
+        "href": "/contact"
+      },
+      {
+        "Text": "Help center",
+        "href": "/help"
+      },
+      {
+        "Text": "Exchanges",
+        "href": "/contact"
+      },
+      {
+        "Text": "Credit cards",
+        "href": "/credit"
+      },
+      {
+        "Text": "Debit cards",
+        "href": "/debit"
+      }
+    ]
+  },
+  {
+    "head": "Contact with us",
+    "Links": [
+      {
+        "Text": "Facebook",
+        "href": "https://www.facebook.com/"
+      },
+      {
+        "Text": "Instagram",
+        "href": "https://www.instagram.com/accounts/login/?hl=en"
+      },
+      {
+        "Text": "Twitter",
+        "href": "/contact"
+      },
+      {
+        "Text": "Linkedin",
+        "href": "https://in.linkedin.com/"
+      }
+    ]
+  },
+  {
+    "head": "About",
+    "Links": [
+      {
+        "Text": "Careers",
+        "href": "/careers"
+      },
+      {
+        "Text": "About us",
+        "href": "/about"
+      },
+      {
+        "Text": "Blogs",
+        "href": "/blogs"
+      },
+      {
+        "Text": "News",
+        "href": "/news"
+      }
+    ]
+  }
 ]

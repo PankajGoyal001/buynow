@@ -14,9 +14,7 @@ const NewArrivals = ({ data, title }) => {
       <div className=" md:py-10 py-[25px]">
         <div className="flex flex-col gap-5 sm:gap-10">
           <div className="flex items-end justify-between">
-            <h1 className="sm:text-[34px] text-2xl leading-[123.5%] font-heebo_Medium text-gray-graystrong tracking-wide">
-              {title}
-            </h1>
+            <h1 className="CommonHead">{title}</h1>
             <div className="md:flex max-w-[95px] group: hover:cursor-pointer hidden items-center gap-[10px] h-[22px] w-full ">
               <img
                 className="hover:scale-90 ease-in-out duration-200"

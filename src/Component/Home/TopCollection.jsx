@@ -14,7 +14,7 @@ const TopCollection = () => {
           <div className="flex flex-col gap-5 sm:gap-10">
             <div className="flex flex-col gap-[10px] sm:gap-5">
               <div className="">
-                <h2 className="font-heebo_Medium md:text-[34px] text-2xl md:leading-[123.5%] text-gray-graystrong tracking-wide" >
+                <h2 className="CommonHead" >
                   Top Collection
                 </h2>
               </div>

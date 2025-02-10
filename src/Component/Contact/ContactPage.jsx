@@ -11,7 +11,7 @@ const ContactPage = () => {
         <div className="py-5 sm:py-20">
           <div className="flex flex-col gap-5 sm:gap-10">
             <div className="flex flex-col gap-[10px]">
-              <h1 className='sm:text-[34px] leading-[42px] tracking-wide text-2xl text-gray-graystrong font-heebo_Medium'>Get In Touch!</h1>
+              <h1 className='CommonHead'>Get In Touch!</h1>
               <div className="sm:flex items-center pb-5 border-b hidden border-[#42265914]">
                 <p className="text-gray-graydark text-base tracking-[0.15px] font-inter_regular">Home</p>
                 <img className='' src={arrowRight} alt="arrow" />
@@ -23,14 +23,14 @@ const ContactPage = () => {
                 <h2 className='font-heebo_Medium text-xl leading-8 tracking-[0.15px] text-gray-graystrong'>Contact Us</h2>
                 <input className=' outline-none border py-4 px-5 rounded-[30px] text-gray-graydark  text-base tracking-[0.15px] font-inter_regular' type="Name" id='name' placeholder='Name' />
                 <input className=' outline-none border py-4 px-5 rounded-[30px] text-gray-graydark  text-base tracking-[0.15px] font-inter_regular' type="phone" id='Email' placeholder='Email/Phone no.' />
-                <select className='border px-5 py-4 rounded-[30px]' name="product" id="product">
+                <select className='border px-5 py-4 rounded-[30px] outline-none' name="product" id="product">
                   <option>Select an option...</option>
                   <option className='text-gray-graydark'>B</option>
                   <option className='text-gray-graydark'>C</option>
                   <option className='text-gray-graydark'>D</option>
                   <option className='text-gray-graydark'>E</option>
                 </select>
-                <input className=' outline-none border py-4 px-5 rounded-[30px] text-gray-graydark  text-base tracking-[0.15px] font-inter_regular pb-12' type="comment" id='comment' placeholder='Comment' />
+                <textarea className=' outline-none border py-4 px-5 rounded-[30px] text-gray-graydark  text-base tracking-[0.15px] font-inter_regular pb-12' name="comment" id="comment" placeholder='Comment'></textarea>
                 <div className="flex gap-[9px]">
                   <input type="checkbox" id='continue' />
                   <p className="text-gray-graydark font-inter_regular sm:text-base text-sm tracking-[0.17px] sm:tracking-[0.15px] py-[9px]">By continuing, you agree to Buynow policy</p>

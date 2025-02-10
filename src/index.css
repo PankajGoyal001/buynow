@@ -8,6 +8,14 @@
     .container {
         @apply max-w-[1190px] w-full mx-auto px-5
     }
+
+    .CommonHead{
+        @apply sm:text-[34px] sm:leading-[123.5%] text-2xl font-heebo_Medium text-gray-graystrong tracking-wide
+    }
+
+    .SameText{
+        @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark
+    }
 }
 
 

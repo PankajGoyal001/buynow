@@ -1,0 +1,40 @@
+[
+    {
+      "header": "All Offers",
+      "Text1": "Shoes for man",
+      "Text2": "Grooming",
+      "Text3": "Laptop",
+      "Text4": "Watches",
+      "Text5": "Shoes Girls",
+      "Text6": "Mobile phone"
+    },
+    {
+      "header": "Today Offers ",
+      "header1":"20% Off",
+      "Text1": "Shoes Girls",
+      "Text2": "Shoes For Man",
+      "Text3": "Baby Toys",
+      "Text4": "Gaming",
+      "Text5": "Toys",
+      "Text6": "Sports Shoes"
+    },
+    {
+      "header": "Monthly Offers",
+      "Text1": "Formal Shirt",
+      "Text2": "Jeckets",
+      "Text3": "Jeans Pant",
+      "Text4": "Shirt",
+      "Text5": "Grooming",
+      "Text6": "Tunk"
+    },
+    {
+      "header": "Coming soon offers",
+      "Text1": "Hand Bags",
+      "Text2": "Watches",
+      "Text3": "Clothing",
+      "Text4": "All Shoes",
+      "Text5": "Jewelry",
+      "Text6": "Accessories"
+    }
+  ]
+  

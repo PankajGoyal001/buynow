@@ -19,11 +19,11 @@ const DealsProduct = () => {
             <div className="container relative">
                 <div className="flex flex-col pt-20 gap-10">
                     <div className="flex flex-col gap-[10px]">
-                        <h1 className='font-heebo_Medium text-[34px] leading-[42px] text-gray-graystrong'>Top Deals</h1>
+                        <h1 className='CommonHead'>Top Deals</h1>
                         <div className="sm:flex hidden items-center pb-5 border-b border-[#42265914]">
-                            <p className="text-gray-graydark text-base tracking-[0.15px] font-inter_regular">Home</p>
-                            <img className='' src={arrowRight} alt="arrow" />
-                            <p className="text-base tracking-[0.15px] font-inter_regular text-gray-graystrong ">Products</p>
+                            <h6 className="SameText">Home</h6>
+                            <img src={arrowRight} alt="arrow" />
+                            <h6 className="SameText ">Products</h6>
                         </div>
                     </div>
                     <div className="flex flex-col gap-6'">

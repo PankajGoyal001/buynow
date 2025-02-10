@@ -15,7 +15,7 @@ const HelpCenter = () => {
                 <div className="flex flex-col gap-5 sm:gap-10">
                     <div className="sm:flex items-end grid gap-5 w-full pb-5 border-b justify-between">
                         <div className="flex flex-col gap-[10px]">
-                            <h1 className='font-heebo_Medium text-2xl sm:text-[34px] leading-[42px] text-gray-graystrong'>Help Center</h1>
+                            <h1 className='CommonHead'>Help Center</h1>
                             <div className="sm:flex items-center hidden border-[#42265914]">
                                 <p className="text-gray-graydark text-base tracking-[0.15px] font-inter_regular">Home</p>
                                 <img className='' src={arrowRight} alt="arrow" />
