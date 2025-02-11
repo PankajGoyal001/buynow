@@ -8,6 +8,7 @@ import TopDeal from "./Pages/TopDeal";
 import Contact from "./Pages/Contact";
 import HelpCenter from "./Component/Help/HelpCenter";
 import ProductDetail from "./Pages/ProductDetail";
+import Cart from "./Pages/Cart";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Product" element={<Product />} />
           <Route path="/help" element={<HelpCenter />} />
           <Route path="/productdetails" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

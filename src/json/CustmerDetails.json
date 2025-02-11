@@ -1,0 +1,26 @@
+[
+    {
+        "Images":"Avatar1.svg",
+        "Head":"Craig Septimus",
+        "Time":"6 July 2021",
+        "Text":"A mauris amet, et molestie urna ut. Felis, eros varius molestie amet, quisque potenti pharetra aenean. Habitant morbi vehicula cras urna et sit hendrerit nunc aenean. In arcu, egestas tincidunt sem vitae suscipit nisl interdum. Aliquet sed in sit tellus lacus eu dolor vitae sed.",
+        "Button":"HelpFul",
+        "Rating":"StarsRating.svg"
+    },
+    {
+        "Images":"Avatar2.svg",
+        "Head":"Gretchen Vaccaro",
+        "Time":"6 July 2021",
+        "Text":"Consequat vitae aliquet volutpat commodo in ut eget. Consectetur id id accumsan eu elit et cursus. Nisi, vel mauris congue in scelerisque eu. Diam mollis purus, pharetra vitae praesent leo urna. Erat urna tellus porttitor id morbi cursus odio in.",
+        "Button":"HelpFul",
+        "Rating":"StarsRating.svg"
+    },
+    {
+        "Images":"Avatar3.svg",
+        "Head":"Justin Kenter",
+        "Time":"6 July 2021",
+        "Text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.",
+        "Button":"HelpFul",
+        "Rating":"StarsRating.svg"
+    }
+]

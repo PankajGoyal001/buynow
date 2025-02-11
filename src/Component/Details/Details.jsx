@@ -4,10 +4,10 @@ const Details = () => {
     return (
         <>
             <section>
-                <div className="py-10 ">
-                    <div className="container">
-                        <div className="flex flex-col gap-5">
-                            <h2 className='text-xl leading-8 tracking-[0.15px] font-heebo_Medium text-gray-graystrong'>Product Details</h2>
+                <div className="container">
+                    <div className="py-10 border-t">
+                        <div className="flex flex-col sm:gap-5 gap-[14px]">
+                            <h2 className='Head'>Product Details</h2>
                             <p className="SameText">Take calls and reply to texts. Id aliquam felis a egestas mi diam erat eu habitasse. Suscipit tincidunt sodales mauris ac, sed. Tempus, lacus, consectetur neque, et. Vitae sapien, suspendisse eget maecenas sit pulvinar lectus. Tristique leo sit velit interdum vel. Donec non vitae quam est consequat tortor etiam in in.</p>
                             <p className='SameText'>
                                 Elementum condimentum dis tortor ipsum duis amet, non. A mauris amet, et molestie urna ut. Felis, eros varius molestie amet, quisque potenti pharetra aenean. Habitant morbi vehicula cras urna et sit hendrerit nunc aenean. In arcu, egestas tincidunt sem vitae suscipit nisl interdum.

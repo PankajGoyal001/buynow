@@ -1,0 +1,30 @@
+[
+    {
+        "Images":"CartImg.png",
+        "Head":"Apple Watch SE ",
+        "Title":"Silver Aluminium Case with Abyss Blue Sport Band - Regular",
+        "Size":"41mm",
+        "SizeText":"Size",
+        "Gps":"GPS",
+        "Style":"Style",
+        "Color":"Color",
+        "Shoping":"Free shipping",
+        "Price":"$320.00",
+        "Remove":"Remove",
+        "Colortag":"#FFB400"
+    },
+    {
+        "Images":"CartImg1.png",
+        "Head":"Apple Watch SE ",
+        "Title":"Silver Aluminium Case with Abyss Blue Sport Band - Regular",
+        "Size":"41mm",
+        "SizeText":"Size",
+        "Gps":"GPS",
+        "Style":"Style",
+        "Color":"Color",
+        "Shoping":"Free shipping",
+        "Price":"$320.00",
+        "Remove":"Remove",
+        "Colortag":"#C4CFD4"
+    }
+]
