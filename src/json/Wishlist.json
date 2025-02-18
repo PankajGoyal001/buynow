@@ -1,0 +1,92 @@
+[
+    {
+        "Image":"Wishlist1.png",
+        "Color":"ColorDots.svg",
+        "Name":"Boat Rockerz 425 Bluetooth Wireless",
+        "Discount":"30% off",
+        "Price":"$ 180.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist2.png",
+        "Color":"ColorDots.svg",
+        "Name":"Lenovo V15 Intel Celeron N4020..",
+        "Discount":"35% off",
+        "Price":"$ 210.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist3.png",
+        "Color":"ColorDots.svg",
+        "Name":"Lenovo ThinkBook 15 Intel 11th Gen Core",
+        "Discount":"30% off",
+        "Price":"$ 150.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist4.png",
+        "Color":"ColorDots.svg",
+        "Name":"HP 14s, 5th Gen AMD Ryzen 3- 8GB RAM",
+        "Discount":"20% off",
+        "Price":"$ 254.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist5.png",
+        "Color":"ColorDots.svg",
+        "Name":"Apple iPhone SE (64 GB) - Midnight",
+        "Discount":"10% off",
+        "Price":"$ 300.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist6.png",
+        "Color":"ColorDots.svg",
+        "Name":"Hp 15S AMD Ryzen 3- 5300U 15.6 Inches",
+        "Discount":"20% off",
+        "Price":"$ 400.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist7.png",
+        "Color":"ColorDots.svg",
+        "Name":"Samsung Galaxy M12 (Blue, 4GB RAM)",
+        "Discount":"20% off",
+        "Price":"$ 253.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist8.png",
+        "Color":"ColorDots.svg",
+        "Name":"Apple iPhone 13 Pro Max (128GB)",
+        "Discount":"10% off",
+        "Price":"$ 230.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist9.png",
+        "Color":"ColorDots.svg",
+        "Name":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+        "Discount":"50% off",
+        "Price":"$ 59.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    },
+    {
+        "Image":"Wishlist10.png",
+        "Color":"ColorDots.svg",
+        "Name":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+        "Discount":"50% off",
+        "Price":"$ 59.00",
+        "Buy":"BUY",
+        "Arrow":"Arrowlineright.svg"
+    }
+]

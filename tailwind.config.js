@@ -19,8 +19,11 @@ export default {
         slate:{
           slatedark: "#212B36"
         }
+        
       },
     },
+
+    
     fontFamily: {
       heebo_regular: ['"heebo_regular", serif'],
       heebo_Medium: ['"heebo_Medium", serif'],

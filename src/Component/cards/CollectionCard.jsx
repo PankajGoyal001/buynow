@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Next from "../../assets/svg/ArrowBackFilled.svg";
+import { Link } from 'react-router-dom';
 
 
 const CollectionCard = ({Image1,Image2,Image3,Image4,View,Name,Array}) => {
+  const [Click, setClick] = useState(false)
   return (
     <>
       <div className="flex flex-col gap-5 bg-[#ED5F600A] rounded-[20px] border items-center px-5 py-5">
@@ -16,10 +18,9 @@ const CollectionCard = ({Image1,Image2,Image3,Image4,View,Name,Array}) => {
             <img className="rounded-bl-[10px]" src={`/src/assets/images/${Image3}`} alt="main_Images" />
             <img className="rounded-br-[10px]" src={`/src/assets/images/${Image4}`} alt="main_Images" />
           </div>
-         <div className="flex gap-2 hover:cursor-pointer px-2 py-[6px]">
-          <p className="font-inter_Medium md:text-sm md:leading-6 text-[13px] leading-[22px] tracking-[0.4px] text-purple-Purple_dark">{View}</p>
-          <img src={`/src/assets/svg/${Array}`} alt="Arrow" />
-         </div>
+          <Link to={"/productDetails"} className='flex gap-2 hover:cursor-pointer px-2 py-[6px]'>
+          <button  onClick={()=>setClick(!Click)} className="font-inter_Medium md:text-sm md:leading-6 text-[13px] leading-[22px] tracking-[0.4px] text-purple-Purple_dark">{View}</button>
+          <img src={`/src/assets/svg/${Array}`} alt="Arrow" /></Link>
         </div>
     </>
   )

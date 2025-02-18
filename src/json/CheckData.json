@@ -1,0 +1,22 @@
+[
+    {
+        "Images":"Regester.svg",
+        "Title":"Register",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"Login.svg",
+        "Title":"Log In",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"Google.svg",
+        "Title":"Google",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"Facebook.svg",
+        "Title":"Facebook",
+        "Arrow":"ArrowRight.svg"
+    }
+]

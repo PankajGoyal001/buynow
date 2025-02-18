@@ -16,8 +16,17 @@
     .SameText{
         @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark
     }
+    .SameText1{
+        @apply md:text-base text-xs leading-[166%] font-inter_regular tracking-[0.4px] md:tracking-[0.15px] text-gray-graydark
+    }
+    .NewText{
+        @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-purple-Purple_dark
+    }
+    .Copytext1{
+        @apply md:text-base text-xs leading-[166%] font-inter_regular tracking-[0.4px] md:tracking-[0.15px] text-gray-graydark
+    }
     .Head{
-        @apply text-xl leading-8 tracking-[0.15px] font-heebo_Medium text-gray-graystrong
+        @apply sm:text-xl text-base leading-8 tracking-[0.15px] font-heebo_Medium text-gray-graystrong
     }
     .Copytext{
         @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graystrong

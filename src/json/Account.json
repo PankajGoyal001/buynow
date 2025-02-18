@@ -1,0 +1,50 @@
+[
+    {
+        "Images":"mainImg.svg",
+        "Name":"Tiana Baptista",
+        "Text":"tim.jennings@example.com",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg1.svg",
+        "Name":"My orders",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg2.svg",
+        "Name":"Payment",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg3.svg",
+        "Name":"Chats",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg4.svg",
+        "Name":"Coupons",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg5.svg",
+        "Name":"Wishlist",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg6.svg",
+        "Name":"Login & Security",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    },
+    {
+        "Images":"mainImg7.svg",
+        "Name":"Logout",
+        "Text":"Lorem ipsum dolor sit amet, consectetur ..",
+        "Arrow":"ArrowRight.svg"
+    }
+]

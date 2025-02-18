@@ -19,38 +19,37 @@ const Banner1 = () => {
   return (
     <>
       <div className="container ">
-        <div className="relative sm:pt-20 pt-10">
+        <div className=" sm:pt-20 pt-10">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-5 sm:gap-10">
               <div className="flex flex-col gap-[10px]">
                 <h1 className='CommonHead'>Apple watches</h1>
                 <div className="sm:flex hidden items-center pb-5 border-b border-[#42265914]">
                   <Link to={"/"}>
-                  <h6 className="SameText">Home</h6>
+                    <h6 className="SameText">Home</h6>
                   </Link>
                   <img className='' src={arrowRight} alt="arrow" />
                   <h6 className="SameText ">Products</h6>
                 </div>
 
               </div>
-              <div className="sm:flex grid gap-[10px] w-full items-center justify-between">
-                <div className={`flex ${Filter ? "flex-row-reverse  " : "flex-row"} gap-6`}>
+              <div className="sm:flex relative grid gap-[10px] w-full items-center justify-between">
+                <div className={`flex ${Filter ? " justify-between " : ""} justify-between w-full gap-6`}>
+                 
+                  <h3 className={`text-base ${Filter ? "pl-[300px]" : ""} font-inter_regular tracking-[0.15px] text-gray-graydark`}>Showing 1–9 of 200 results</h3>
+                  <div className="flex gap-[10px]"> 
                   <button onClick={() => setFilter(!Filter)}
                     className={`flex items-center px-4 py-[6px] border-[#42265980] border rounded-[30px] gap-2 ${Filter ? "hidden " : ""}`}>
                     <p className="text-sm leading-[24px] font-inter_Medium tracking-[0.4px] text-purple-Purple_dark">Filter</p>
                     <img src={Outlines} alt="Outlines" />
                   </button>
-                  <h3 className='text-base font-inter_regular tracking-[0.15px] text-gray-graydark'>Showing 1–9 of 200 results</h3>
-
-                  <div className="flex flex-col">
-
                     <button className='flex items-center gap-2 px-4 py-[6px] border-[#42265980] border rounded-[30px]'>
                       <p className="text-sm leading-[24px] font-inter_Medium tracking-[0.4px] text-purple-Purple_dark">Sort by</p>
                       <img className='rotate-90' src={arrayDown} alt="arrowDown" />
                     </button>
                     {
                       Filter && (<>
-                        <div className=" absolute max-w-[270px] w-full bg-white top-[220px]">
+                        <div className=" absolute max-w-[270px] w-full bg-white left-0 top-[0px]">
                           <div className=" border rounded-[20px] flex gap-[10px] flex-col">
                             <div className="flex items-center p-5 justify-between">
                               <h2 className='font-heebo_Medium text-xl leading-[133.3%] tracking-[0.15px] text-gray-graystrong'>Filter </h2>
@@ -146,32 +145,34 @@ const Banner1 = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-3 md:gap-6 pb-10" >
-              {
-                WatchesData.map((items, index) => (
-                  <div className="flex flex-col w-full  h-full gap-[14px] md:gap-5 border rounded-[20px] hover:scale-[0.95] duration-200 hover:shadow-lg relative" key={index}>
-                    <img className="max-w-[270px] w-full max-h-[249px] h-full"
-                      src={`src/assets/Images/${items.Image}`}
-                      alt="product_image"
-                    />
-                    <img className="max-w-6 w-full absolute top-5 right-5" src={`/src/assets/svg/${items.Heart}`} alt="" />
-                    <div className="flex flex-col gap-[10px]">
-                      <div className="flex flex-col md:px-5 md:pb-5 px-[10px] gap-[8px] md:gap-[10px]">
-                        <h2 className="md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark">{items.Name}</h2>
-                        <div className="flex justify-between">
-                          <p className="md:text-xl font-heebo_Medium whitespace-nowrap  text-xl leading-[133.3%]">{items.Price}</p>
-                          <img src={`src/assets/svg/${items.Rating}`} alt="rating_star" />
-                        </div>
-                        <span className="border-b border"></span>
-                        <div className="flex justify-between pb-[14px] md:py-0 items-center gap-[10px]">
-                          <p className="text-purple-Purple_light text-sm tracking-[0.17px] font-inter_regular">{items.Stoke}</p>
-                          <img className="bg-purple-Purple_dark p-[5px] hover:cursor-pointer rounded-full" src={`src/assets/svg/${items.Shop}`} alt="Shop" />
+            <div className="flex justify-end">
+              <div className={`grid    ${Filter ? "grid-cols-3 w-full max-w-[858px]" : "grid-cols-4 w-full"} md:gap-6 pb-10 `} >
+                {
+                  WatchesData.map((items, index) => (
+                    <div className="flex flex-col w-[270px] h-full gap-[14px] md:gap-5 border rounded-[20px] hover:scale-[0.95] duration-200 hover:shadow-lg relative" key={index}>
+                      <img className="max-w-[270px] w-full max-h-[249px] h-full"
+                        src={`src/assets/Images/${items.Image}`}
+                        alt="product_image"
+                      />
+                      <img className="max-w-6 w-full absolute top-5 right-5" src={`/src/assets/svg/${items.Heart}`} alt="" />
+                      <div className="flex flex-col gap-[10px]">
+                        <div className="flex flex-col md:px-5 md:pb-5 px-[10px] gap-[8px] md:gap-[10px]">
+                          <h2 className="md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark">{items.Name}</h2>
+                          <div className="flex justify-between">
+                            <p className="md:text-xl font-heebo_Medium whitespace-nowrap  text-xl leading-[133.3%]">{items.Price}</p>
+                            <img src={`src/assets/svg/${items.Rating}`} alt="rating_star" />
+                          </div>
+                          <span className="border-b border"></span>
+                          <div className="flex justify-between pb-[14px] md:py-0 items-center gap-[10px]">
+                            <p className="text-purple-Purple_light text-sm tracking-[0.17px] font-inter_regular">{items.Stoke}</p>
+                            <img className="bg-purple-Purple_dark p-[5px] hover:cursor-pointer rounded-full" src={`src/assets/svg/${items.Shop}`} alt="Shop" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))
-              }
+                  ))
+                }
+              </div>
             </div>
           </div>
         </div>

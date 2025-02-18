@@ -27,7 +27,9 @@ function Header() {
               <p className="text-xs leading-5  sm:text-sm text-gray-graylight font-heebo opacity-90 ">Free delivery on $100.00</p>
             </div>
             <div className="flex text-gray-graylight gap-[10px]  ">
+              <Link to={"/help"}>
               <p className=" text-xs leading-5  opacity-90  font-normal sm:text-sm">Help center</p>
+              </Link>
               <span className="h-6 border-r hidden sm:block rounded-[5px] opacity-90 border-[#ED5F6014]"></span>
               <p className="opacity-90 hidden sm:block  font-normal text-sm"> Returns policy</p>
               <span className="h-6 border-r hidden sm:block rounded-[5px] opacity-90 border-[#ED5F6014]"></span>
@@ -43,7 +45,9 @@ function Header() {
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-[30px] ">
+            <Link to={"/"}>
             <img src={logo} alt="logo" />
+            </Link>
             <ul className="md:flex  hidden  text-gray-graydark max-w-[380px] w-full  lg:gap-8 ">
               {
                 data?.map((items, index) => (
@@ -65,7 +69,7 @@ function Header() {
               <img className="sm:pl-3" src="src/assets/svg/Search.svg" alt="search" />
               <div className="sm:flex hidden group">
                 <input className="w-36 outline-none" type="text" id="search" placeholder="Search" />
-                <button onClick={() => setRotate(!rotate)} className="flex gap-[6px] px-4 py-[6px] bg-[#7339b9] items-center text-white rounded-[30px]" >  ALL
+                <button onClick={() => setRotate(!rotate)} className="flex gap-[6px] px-4 py-[6px] bg-[#422659] items-center text-white rounded-[30px]" >  ALL
                   <img className={`transition-all duration-200 ${rotate && "rotate-180"} opacity-20  group-hover:opacity-100`} src="src/assets/svg/down.svg" alt="arrow" />
                 </button>
               </div>
@@ -86,7 +90,7 @@ function Header() {
               }
               <span className="w-[1px] h-5 border-r lg:block hidden rounded-[6px] opacity-90"></span>
               <Link to={"/contact"}>
-                <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-orange-400 " src={contact} alt="Contact" />
+                <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-[#422659] " src={contact} alt="Contact" />
               </Link>
               <button onClick={() => setLook(!Look)}  >
                 <img className=" sm:hidden" src={navbar} alt="navbar" />

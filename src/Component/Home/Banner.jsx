@@ -33,7 +33,7 @@ const Banner = () => {
                   </span>
                 </p>
                 <div className="flex gap-[25px] md:gap-[30px] group items-center">
-                  <Buttons classname={"w-[172px] text-[15px] text-white "} variant={"solid"} childname={"Shop Now"} />
+                  <Buttons classname={"w-[172px] text-[15px] text-white "} variant={"solid"} href={"cart"} image={"src/assets/svg/cart.svg"} childname={"Shop Now"} />
                   <div className="flex gap-[15px] md:gap-[30px]">
                     <div className="grid ">
                       <p className="font-heebo_Medium text-xl text-gray-graystrong">100k+</p>

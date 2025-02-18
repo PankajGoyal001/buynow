@@ -120,10 +120,10 @@ const BannerProduct = () => {
                                     </div>
                                     <div className="flex gap-[10px] ">
                                         <div className="max-w-[277px] w-full">
-                                            <Buttons variant={"Simple"} childname={"Add to cart"} classname={'border-[#42265980] w-full border'} />
+                                            <Buttons variant={"Simple"} childname={"Add to cart"} href={"cart"} classname={'border-[#42265980] w-full border'} />
                                         </div>
                                         <div className="max-w-[277px] w-full">
-                                            <Buttons variant={"Hard"} childname={"Buy Now"} classname={'text-white w-full'} />
+                                            <Buttons variant={"Hard"} childname={"Buy Now"} href={"cart"} classname={'text-white w-full'} />
                                         </div>
                                     </div>
                                 </div>

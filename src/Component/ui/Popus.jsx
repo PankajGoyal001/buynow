@@ -5,7 +5,7 @@ import SideMenuData from "../../json/SideMenu.json";
 import CartData from "../../json/CartPopus.json";
 import Buttons from './Buttons';
 
-const Popus = ({ CatagoeyPopus, DealsPopus, className, HotOfferPopus, SideMenu, Cart }) => {
+const Popus = ({ CatagoeyPopus, DealsPopus, className, HotOfferPopus, SideMenu, Payment, Cart }) => {
   return (
     <>
       {
@@ -176,7 +176,7 @@ const Popus = ({ CatagoeyPopus, DealsPopus, className, HotOfferPopus, SideMenu, 
                   <div key={index} className="flex gap-5 p-[10px] border rounded-[10px]">
                     <img src={`src/assets/Images/${CartPopus.png}`} alt="images" />
                     <div className=" flex flex-col gap-[6px] ">
-                      <h2 className=''>{items.Title }</h2>
+                      <h2 className=''>{items.Title}</h2>
                       <p className="">{items.Price}</p>
                     </div>
                   </div>
@@ -186,6 +186,37 @@ const Popus = ({ CatagoeyPopus, DealsPopus, className, HotOfferPopus, SideMenu, 
             </div>
             <span className='border-b border-[#574B9B1F]'></span>
             <button className='w-full bg-purple-Purple_dark px-4 py-[6px] Rounded-[30px]'>View Cart</button>
+          </div>
+        </>) : (<></>)
+      }
+
+
+      {
+
+        Payment === "Solid" ? (<>
+          <div className="flex gap-5 flex-col max-w-[564px] pb-10 w-full border rounded-[20px]">
+            <div className="flex  p-5 justify-end gap-[175px] rounded-t-[20px] bg-purple-Purple_light ">
+              <img src="src/assets/Images/Logo.png" alt="Logo" />
+              <img src="src/assets/svg/IconButton1.svg" alt="Close" />
+            </div>
+            <div className="flex flex-col px-10  gap-5">
+              <div className="flex  flex-col items-center text-center gap-[15px]">
+                <h2 className='Head'>Enter OTP</h2>
+                <p className="SameText">Please check your mobile, 6-digit confirmation code to (+1234567890), please enter the confirmation code to verify it’s you.</p>
+              </div>
+              <div className="flex border rounded-[20px] justify-center sm:py-5 py-5 sm:gap-[17px] gap-[11px]">
+                {["1", "3", "5", "7", "0", "1"].map((items, index) => (
+                  <div key={index} className="sm:px-6 px-4 py-2 sm:py-4 border rounded-full"><p className="SameText">{items}</p></div>
+                ))}
+              </div>
+              <div className="flex flex-col gap-[15px] items-center ">
+                <Buttons variant={"Hard"} classname={"w-full"} childname={"Verify"} />
+                <div className="flex gap-[10px]">
+                  <p className="SameText">Don’t have a code? </p>
+                  <button className='NewText'>Resend Code</button>
+                </div>
+              </div>
+            </div>
           </div>
         </>) : (<></>)
       }
