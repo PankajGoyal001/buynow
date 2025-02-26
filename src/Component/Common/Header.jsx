@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "../../json/menulinks.json";
 import logo from "../../assets/Images/Logo.png";
 import flag from "../../assets/svg/india.svg";
-// import array from "../../assets/svg/array_down";
+import array from "../../assets/svg/array_down.svg";
 import badge from "../../assets/svg/badge.svg";
 import contact from "../../assets/svg/Contact.svg";
 import navbar from "../../assets/svg/IconButton.svg";
@@ -15,6 +15,7 @@ function Header() {
   const [Show, setShow] = useState(false);
   const [Show1, setShow1] = useState(false);
   const [Look, setLook] = useState(false);
+  const [Look1, setLook1] = useState(false);
 
 
   return (
@@ -48,7 +49,7 @@ function Header() {
             <Link to={"/"}>
             <img src={logo} alt="logo" />
             </Link>
-            <ul className="md:flex  hidden  text-gray-graydark max-w-[380px] w-full  lg:gap-8 ">
+            <ul className="md:flex hidden text-gray-graydark max-w-[380px] w-full gap-4 lg:gap-8 ">
               {
                 data?.map((items, index) => (
                   <Link to={`${items.href}`} key={'header' + index} >
@@ -62,40 +63,55 @@ function Header() {
             </ul>
             {Show === 1 && <Popus DealsPopus={"Solid"} className={"fixed top-[120px] duration-1000 ease-in-out left-[250px] transition-all "} />}
             {Show === 2 && <Popus HotOfferPopus={"Solid"} className={"fixed top-[120px] duration-1000 ease-in-out left-[250px] transition-all"} />}
+            {Show === 3 && <Popus Pages={"Solid"} className={"fixed top-[120px] duration-1000 ease-in-out left-[250px] transition-all"} />}
           </div>
 
-          <div className="flex items-center  sm:gap-[30px] sm:py-[15px]  py-[10px]">
-            <div className="sm:border  items-center  rounded-[30px] flex gap-2 ">
+          <div className="flex items-center gap-[15px] lg:gap-[30px] sm:py-[15px]  py-[10px]">
+            <div className="lg:border  items-center  rounded-[30px] flex gap-2 ">
               <img className="sm:pl-3" src="src/assets/svg/Search.svg" alt="search" />
-              <div className="sm:flex hidden group">
+              <div className="lg:flex hidden group">
                 <input className="w-36 outline-none" type="text" id="search" placeholder="Search" />
                 <button onClick={() => setRotate(!rotate)} className="flex gap-[6px] px-4 py-[6px] bg-[#422659] items-center text-white rounded-[30px]" >  ALL
                   <img className={`transition-all duration-200 ${rotate && "rotate-180"} opacity-20  group-hover:opacity-100`} src="src/assets/svg/down.svg" alt="arrow" />
                 </button>
+                {
+                  rotate && (<>
+                  <Popus CatagoeyPopus={"Solid"} className={"top-28  absolute"}/>
+                  </>)
+                }
               </div>
             </div>
-            <div className=" gap-[10px]  flex sm:gap-5 items-center">
-              <div className=" sm:flex">
-                <img className="hidden lg:block" src={flag} alt="india" />
-                {/* <img src={array} alt="down-array" /> */}
-              </div>
+            <div className=" gap-[10px] flex sm:gap-5 items-center">
+              <button onClick={() => setLook1(!Look1)} className="hidden cursor-pointer relative lg:flex">
+                <img className="" src={flag} alt="india" />
+                <img src={array} alt="down-array" />
+              </button>
+              {
+                Look1 && (<>
+                <Popus ShortBY={"Solid"} className={"absolute top-28 right-[300px]"} />
+                </>)
+              }
               <span className="w-[1px] h-5 border-r hidden lg:block rounded-[6px] opacity-90"></span>
-              <button onMouseOver={() => setShow1(!Show1)} className="flex">
+              <button onClick={() => setShow1(!Show1)} className="flex">
                 <img src="src/assets/svg/shop.svg" alt="shop" />
                 <img src={badge} alt="badge" />
               </button>
               { Show1 && (<>
-                <Popus Cart={"Soid"} />
+                <Popus Cart={"Solid"} className={"top-28 right-40 absolute"}/>
               </>)
               }
               <span className="w-[1px] h-5 border-r lg:block hidden rounded-[6px] opacity-90"></span>
               <Link to={"/contact"}>
-                <img className=" border rounded-[30px] p-[10px] hidden sm:block hover:bg-[#422659] " src={contact} alt="Contact" />
+                <img className=" border rounded-[30px] p-[10px] hidden md:block hover:bg-[#422659] " src={contact} alt="Contact" />
               </Link>
               <button onClick={() => setLook(!Look)}  >
-                <img className=" sm:hidden" src={navbar} alt="navbar" />
+                <img className=" md:hidden relative" src={navbar} alt="navbar" />
               </button>
-              
+              {
+                Look && (<>
+                <Popus SideMenu={"Solid"} className={"absolute top-12 left-0"} />
+                </>)
+              }
             </div>
           </div>
         </div>

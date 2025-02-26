@@ -29,7 +29,7 @@ const Dropdown = ({ label, items }) => {
         onInput={(e) => setValue(e.target.value)} 
       /> */}
             <button
-                className="flex  w-full justify-between  pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
+                className="flex  w-full justify-between pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {label}

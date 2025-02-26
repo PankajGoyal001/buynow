@@ -8,16 +8,14 @@
     .container {
         @apply max-w-[1190px] w-full mx-auto px-5
     }
-
     .CommonHead{
         @apply sm:text-[34px] sm:leading-[123.5%] text-2xl font-heebo_Medium text-gray-graystrong tracking-wide
     }
-
     .SameText{
         @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graydark
     }
     .SameText1{
-        @apply md:text-base text-xs leading-[166%] font-inter_regular tracking-[0.4px] md:tracking-[0.15px] text-gray-graydark
+        @apply text-base font-inter_regular md:tracking-[0.15px] text-gray-graydark
     }
     .NewText{
         @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-purple-Purple_dark
@@ -30,6 +28,12 @@
     }
     .Copytext{
         @apply md:text-base text-sm font-inter_regular tracking-[0.17px] md:tracking-[0.15px] text-gray-graystrong
+    }
+    .Copytext01{
+        @apply text-base  font-inter_regular tracking-[0.15px] text-gray-graystrong
+    }
+    .SameText01{
+        @apply text-base  font-inter_regular tracking-[0.15px] text-gray-graydark
     }
     .BorderSolid{
         @apply border-[#42265914] border-b rounded-[5px]

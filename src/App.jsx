@@ -26,6 +26,12 @@ import OrderComplete from "./Pages/OrderComplete";
 import Wishlist from "./Pages/Wishlist";
 import UserAccount from "./Pages/UserAccount";
 import Profile from "./Pages/Profile";
+import MyOrder from "./Pages/MyOrder";
+import PaymentOption from "./Pages/PaymentOption";
+import PayCheck from "./Pages/PAyCheck";
+import ReturnOrder from "./Pages/ReturnOrder";
+import CustmerCare from "./Pages/CustmerCare";
+import APIFETCH from "./Pages/APIFETCH";
 
 function App() {
   return (
@@ -57,6 +63,12 @@ function App() {
           <Route path="/wishlist" element={<Wishlist/>} />
           <Route path="/useraccount" element={<UserAccount/>} />
           <Route path="/profile" element={<Profile/>} />
+          <Route path="/myorder" element={<MyOrder/>} />
+          <Route path="/payoption" element={<PaymentOption/>} />
+          <Route path="/paycheck" element={<PayCheck/>} />
+          <Route path="/returnOrder" element={<ReturnOrder/>} />
+          <Route path="/custmer" element={<CustmerCare/>} />
+          <Route path="/apifetch" element={<APIFETCH/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

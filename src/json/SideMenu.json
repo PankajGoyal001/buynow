@@ -4,35 +4,35 @@
         "Text":"Account"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Order.svg",
+        "Text":"My Order"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Wishlist.svg",
+        "Text":"Wishlist"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Shop.svg",
+        "Text":"My Cart"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Deal.svg",
+        "Text":"Top Deals"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Offer.svg",
+        "Text":"Hot Offers"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Pages.svg",
+        "Text":"Pages"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Help.svg",
+        "Text":"Healp Center"
     },
     {
-        "Image":"Contact.svg",
-        "Text":"Account"
+        "Image":"Return1.svg",
+        "Text":"Retun Policy"
     }
 ]

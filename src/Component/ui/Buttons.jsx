@@ -51,7 +51,7 @@ const Buttons = ({ classname, childname, imageclass, variant,href,image,classnam
 
       {variant === "Simple" ? (<>
         <Link className='' to={`/${href}`}>
-          <button className={` ${classname} hover:cursor-pointer hover:scale-90 ease-in-out duration-500 items-center rounded-[30px] py-2 px-[22px]`}>
+          <button className={` ${classname} hover:cursor-pointer hover:scale-90 text-purple-Purple_dark font-inter_Medium ease-in-out duration-500 items-center rounded-[30px] py-2 px-[22px]`}>
             {childname}
           </button>
         </Link>
