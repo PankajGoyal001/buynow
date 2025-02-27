@@ -7,6 +7,11 @@ const CollectionCard = ({Image1,Image2,Image3,Image4,View,Name,Array}) => {
   const [Click, setClick] = useState(false)
   return (
     <>
+
+
+
+
+    
       <div className="flex flex-col gap-5 bg-[#ED5F600A] rounded-[20px] border items-center px-5 py-5">
               <div className="flex gap-[10px]">
           <p className="font-heebo_Medium md:text-xl text-base md:leading-8 -tracking-[0.15px] text-gray-graystrong">{Name}</p>
