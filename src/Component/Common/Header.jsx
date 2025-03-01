@@ -17,7 +17,6 @@ function Header() {
   const [Look, setLook] = useState(false);
   const [Look1, setLook1] = useState(false);
 
-
   return (
     <header >
       <div className="w-full border-b bg-black py-3 ">
