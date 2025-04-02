@@ -10,7 +10,6 @@ import SendIcon from "../assets/svg/SendIcon.svg";
 
 const CustmerCare = () => {
     const [Click, setClick] = useState(false)
-
     return (
         <>
             <div className="container">

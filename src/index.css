@@ -49,8 +49,7 @@
         font-weight: 400;
         font-display: swap;
     }
-
-    @font-face {
+   @font-face {
         font-family: 'heebo_Medium';
         src: url(./assets/fonts/Heebo-Medium.ttf);
         font-style: normal;

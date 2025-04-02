@@ -21,7 +21,7 @@ function Header() {
     <header >
       <div className="w-full border-b bg-black py-3 ">
         <div className="container">
-          <div className="flex justify-between items-   ">
+          <div className="flex justify-between">
             <div className="flex gap-2 items-center">
               <img className="hidden sm:block" src="src/assets/svg/scooty.svg" alt="scooty" />
               <p className="text-xs leading-5  sm:text-sm text-gray-graylight font-heebo opacity-90 ">Free delivery on $100.00</p>
